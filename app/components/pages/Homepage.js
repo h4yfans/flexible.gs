@@ -9,7 +9,6 @@ class Homepage extends React.Component {
       <div className="xl-tac">
         <Header/>
         <HelloMessage name="Homepage" />
-        <a className="xl-vam xl-co-black-500 xl-dib xl-p8 xl-mr8 icon-flexiblegs-logo-rounded"></a>
       </div>
     )
   }
