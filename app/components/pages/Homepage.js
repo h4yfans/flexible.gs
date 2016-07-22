@@ -8,7 +8,7 @@ class Homepage extends React.Component {
     return (
       <div className="xl-tac">
         <Header/>
-        <HelloMessage name="Homepage" />
+        <HelloMessage name="Home" />
       </div>
     )
   }

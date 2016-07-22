@@ -27,11 +27,20 @@
 @function icon-char($filename) {
 	$char: "";
 
-	@if $filename == flexiblegs-logo-rounded {
+	@if $filename == flexiblegs-square {
 		$char: "\E001";
 	}
-	@if $filename == flexiblegs-logo {
+	@if $filename == flexiblegs {
 		$char: "\E002";
+	}
+	@if $filename == github-alt {
+		$char: "\E003";
+	}
+	@if $filename == twitter {
+		$char: "\E004";
+	}
+	@if $filename == youtube-play {
+		$char: "\E005";
 	}
 
 	@return $char;
@@ -48,9 +57,18 @@
 	}
 }
 
-.icon-flexiblegs-logo-rounded {
-	@include icon(flexiblegs-logo-rounded);
+.icon-flexiblegs-square {
+	@include icon(flexiblegs-square);
 }
-.icon-flexiblegs-logo {
-	@include icon(flexiblegs-logo);
+.icon-flexiblegs {
+	@include icon(flexiblegs);
+}
+.icon-github-alt {
+	@include icon(github-alt);
+}
+.icon-twitter {
+	@include icon(twitter);
+}
+.icon-youtube-play {
+	@include icon(youtube-play);
 }

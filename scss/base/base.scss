@@ -23,6 +23,10 @@
 body {
   font-family: Open Sans;
 }
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
 p {
   margin-top: 0;
   margin-bottom: 0;
@@ -75,9 +79,14 @@ input[type="checkbox"] {
   direction: ltr;
   vertical-align: middle;
 }
-.icon-flexiblegs-logo {
+.icon-flexiblegs {
   text-align: center;
 }
-.icon-flexiblegs-logo:before {
+.icon-flexiblegs:before {
   width: 40px;
+}
+
+.icon-sm:before {
+  font-size: 24px;
+  height: 1em;
 }

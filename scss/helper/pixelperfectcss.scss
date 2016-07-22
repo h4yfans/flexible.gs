@@ -159,15 +159,15 @@ $selector-display: (
 );
 
 // width
-$property-width: (
-  "128",
-);
+$property-width: ();
 $selector-width: (
   "cl": "not-breakpoint-class",
 );
 
 // max-width
-$property-max-width: ();
+$property-max-width: (
+  "1280",
+);
 $selector-max-width: (
   "cl": "not-breakpoint-class",
 );
@@ -184,6 +184,7 @@ $property-line-height: (
   "8",
   "16",
   "24",
+  "36",
   "40",
 );
 $selector-line-height: (
