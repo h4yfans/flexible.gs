@@ -70,6 +70,10 @@ Temporary Items
 # mpeltonen/sbt-idea plugin
 .idea_modules/
 
+# gulp
+js/
+css/
+
 # JIRA plugin
 atlassian-ide-plugin.xml
 
