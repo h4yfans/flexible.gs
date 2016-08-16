@@ -1,15 +1,11 @@
 import React from 'react';
 
-import Header from '../partials/Header'
-import HelloMessage from '../partials/HelloMessage'
+import Layout from '../partials/Layout'
 
 class NotFound extends React.Component {
   render() {
     return (
-      <div>
-        <Header/>
-        <HelloMessage name="Not Found" />
-      </div>
+      <Layout name="Not Found" />
     )
   }
 }

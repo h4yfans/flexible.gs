@@ -1,15 +1,13 @@
 import React from 'react';
 
 import Header from '../partials/Header'
-import HelloMessage from '../partials/HelloMessage'
+import Layout from '../partials/Layout'
+import Footer from '../partials/Footer'
 
 class Install extends React.Component {
   render() {
     return (
-      <div>
-        <Header/>
-        <HelloMessage name="Install" />
-      </div>
+      <Layout name="Install" />
     )
   }
 }
