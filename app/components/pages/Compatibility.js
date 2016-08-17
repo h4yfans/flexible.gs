@@ -1,13 +1,15 @@
+"use strict";
+
 import React from 'react';
 
 import Layout from '../partials/Layout'
 
-class Compatibility extends React.Component {
-  render() {
+var Compatibility = React.createClass({
+  render: function() {
     return (
       <Layout name="Compatibility" />
     )
   }
-}
+});
 
-export default Compatibility;
+module.exports = Compatibility;

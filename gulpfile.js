@@ -75,11 +75,11 @@ function buildScript(file, watch) {
     return stream
       .on('error', handleErrors)
       .pipe(source(file))
-      // .pipe(rename('bundle.js'))
-      // start minify
-      .pipe(buffer())
-      .pipe(uglify())
       .pipe(rename('bundle.js'))
+      // start minify
+      // .pipe(buffer())
+      // .pipe(uglify())
+      // .pipe(rename('bundle.js'))
       // end minify
       .pipe(gulp.dest('js'))
       .pipe(reload({stream:true}))

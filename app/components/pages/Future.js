@@ -1,13 +1,15 @@
+"use strict";
+
 import React from 'react';
 
 import Layout from '../partials/Layout'
 
-class Future extends React.Component {
-  render() {
+var Future = React.createClass({
+  render: function() {
     return (
       <Layout name="Future" />
     )
   }
-}
+});
 
-export default Future;
+module.exports = Future;

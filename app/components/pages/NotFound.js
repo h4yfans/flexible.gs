@@ -1,13 +1,15 @@
+"use strict";
+
 import React from 'react';
 
 import Layout from '../partials/Layout'
 
-class NotFound extends React.Component {
-  render() {
+var NotFound = React.createClass({
+  render: function() {
     return (
       <Layout name="Not Found" />
     )
   }
-}
+});
 
-export default NotFound;
+module.exports = NotFound;

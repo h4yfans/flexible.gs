@@ -1,13 +1,15 @@
+"use strict";
+
 import React from 'react';
 
 import Layout from '../partials/Layout'
 
-class ResponsiveTest extends React.Component {
-  render() {
+var ResponsiveTest = React.createClass({
+  render: function() {
     return (
       <Layout name="Responsive Test" />
     )
   }
-}
+});
 
-export default ResponsiveTest;
+module.exports = ResponsiveTest;

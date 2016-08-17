@@ -1,13 +1,15 @@
+"use strict";
+
 import React from 'react';
 
 import Layout from '../partials/Layout'
 
-class Motivation extends React.Component {
-  render() {
+var Motivation = React.createClass({
+  render: function() {
     return (
       <Layout name="Motivation" />
     )
   }
-}
+});
 
-export default Motivation;
+module.exports = Motivation;

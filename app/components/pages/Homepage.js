@@ -1,13 +1,16 @@
+"use strict";
+
 import React from 'react';
 
 import Layout from '../partials/Layout'
 
-class Homepage extends React.Component {
-  render() {
+var Homepage = React.createClass({
+
+  render: function() {
     return (
-      <Layout name="Home" />
+      <Layout name="Homepage" />
     )
   }
-}
+});
 
-export default Homepage;
+module.exports = Homepage;

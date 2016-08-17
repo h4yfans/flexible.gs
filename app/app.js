@@ -2,6 +2,8 @@ import React from "react";
 import ReactDOM from 'react-dom';
 import { Router, Route, Link, browserHistory } from 'react-router'
 
+let LanguageActions = require('./actions/LanguageActions');
+
 import Homepage from './components/pages/Homepage'
 import Install from './components/pages/Install'
 import Learn from './components/pages/Learn'
@@ -23,5 +25,7 @@ var routes = (
     <Route path="*" component={NotFound}/>
   </Router>
 )
+
+LanguageActions.initApp();
 
 ReactDOM.render(routes, document.getElementById('app'));
