@@ -30,20 +30,24 @@ var Header = React.createClass({
               <a href="https://github.com/flexiblegs" target="_blank" className="icon-github-alt icon-sm xl-vam xl-dib xl-co-black-100 ho-co-white xl-p8 xl-mr8"></a>
               <a href="https://twitter.com/flexiblegs" target="_blank" className="icon-twitter icon-sm xl-vam xl-dib xl-co-black-100 ho-co-white xl-p8 xl-mr8"></a>
               <a href="https://www.youtube.com/channel/UCik0QP2GXULQfQTl7VGzDWA" target="_blank" className="icon-youtube-play icon-sm xl-vam xl-dib xl-co-black-100 ho-co-white xl-p8 xl-mr16"></a>
-              <a
-                href="#"
-                data-target="#"
-                className="xl-vam xl-dib xl-p8 xl-fs14 xl-fw400 xl-co-gray-500 ho-co-white"
-                onClick={this.switchLanguage.bind(this,'en')}>
-                English
-              </a>
-              <a
-                href="#"
-                data-target="#"
-                className="xl-vam xl-dib xl-p8 xl-fs14 xl-fw400 xl-co-gray-500 ho-co-white"
-                onClick={this.switchLanguage.bind(this,'tr')}>
-                Turkish
-              </a>
+              {this.props.content.lang == "en" &&
+                <a
+                  href="#"
+                  data-target="#"
+                  className="xl-vam xl-dib xl-p8 xl-fs14 xl-fw400 xl-co-gray-500 ho-co-white"
+                  onClick={this.switchLanguage.bind(this,'tr')}>
+                  Türkçe
+                </a>
+              }
+              {this.props.content.lang == "tr" &&
+                <a
+                  href="#"
+                  data-target="#"
+                  className="xl-vam xl-dib xl-p8 xl-fs14 xl-fw400 xl-co-gray-500 ho-co-white"
+                  onClick={this.switchLanguage.bind(this,'en')}>
+                  English
+                </a>
+              }
             </div>
           </div>
         </div>
