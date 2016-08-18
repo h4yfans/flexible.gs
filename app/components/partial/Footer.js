@@ -7,10 +7,10 @@ var Footer = React.createClass({
     return (
       <div className="wrap xl-2 xl-ffscp xl-mb24 xl-co-gray-500 xl-mt24">
         <div className="col xl-fs14 xl-tal">
-          {this.props.content.general.keyboard_shortcuts}
+          {this.props.content.keyboardShortcuts}
         </div>
         <div className="col xl-fs14 xl-tar">
-          {this.props.content.general.i_love_flexiblegs}
+          {this.props.content.iLoveFlexibleGridSystem}
         </div>
       </div>
     );

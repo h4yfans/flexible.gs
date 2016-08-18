@@ -27,20 +27,38 @@
 @function icon-char($filename) {
 	$char: "";
 
-	@if $filename == flexiblegs-square {
+	@if $filename == dot-circle-o {
 		$char: "\E001";
 	}
-	@if $filename == flexiblegs {
+	@if $filename == flexiblegs-square {
 		$char: "\E002";
 	}
-	@if $filename == github-alt {
+	@if $filename == flexiblegs {
 		$char: "\E003";
 	}
-	@if $filename == twitter {
+	@if $filename == github-alt {
 		$char: "\E004";
 	}
-	@if $filename == youtube-play {
+	@if $filename == gratipay {
 		$char: "\E005";
+	}
+	@if $filename == heart {
+		$char: "\E006";
+	}
+	@if $filename == long-arrow-left {
+		$char: "\E007";
+	}
+	@if $filename == long-arrow-right {
+		$char: "\E008";
+	}
+	@if $filename == paypal {
+		$char: "\E009";
+	}
+	@if $filename == twitter {
+		$char: "\E00A";
+	}
+	@if $filename == youtube-play {
+		$char: "\E00B";
 	}
 
 	@return $char;
@@ -57,6 +75,9 @@
 	}
 }
 
+.icon-dot-circle-o {
+	@include icon(dot-circle-o);
+}
 .icon-flexiblegs-square {
 	@include icon(flexiblegs-square);
 }
@@ -65,6 +86,21 @@
 }
 .icon-github-alt {
 	@include icon(github-alt);
+}
+.icon-gratipay {
+	@include icon(gratipay);
+}
+.icon-heart {
+	@include icon(heart);
+}
+.icon-long-arrow-left {
+	@include icon(long-arrow-left);
+}
+.icon-long-arrow-right {
+	@include icon(long-arrow-right);
+}
+.icon-paypal {
+	@include icon(paypal);
 }
 .icon-twitter {
 	@include icon(twitter);

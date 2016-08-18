@@ -2,13 +2,12 @@
 
 import React from 'react';
 
-import Layout from '../partials/Layout'
+import Layout from '../partial/Layout'
 
 var Homepage = React.createClass({
-
   render: function() {
     return (
-      <Layout name="Homepage" />
+      <Layout page="homepage" />
     )
   }
 });

@@ -1,9 +1,9 @@
 "use strict";
 
 let Dispatcher = require('../dispatcher/Dispatcher');
-const ACTION_TYPES = require('../constants/LanguageConstants');
+const ACTION_TYPES = require('../constant/LanguageConstant');
 
-let LanguageActions = {
+let LanguageAction = {
   switchLanguage(language) {
     Dispatcher.dispatch({
       actionType: ACTION_TYPES.SWITCH_LANGUAGE,
@@ -17,4 +17,4 @@ let LanguageActions = {
   }
 };
 
-module.exports = LanguageActions;
+module.exports = LanguageAction;

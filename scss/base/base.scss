@@ -2,10 +2,10 @@
 
 *, *:before, *:after {
   -webkit-tap-highlight-color: rgba(0,0,0,0);
-  -webkit-font-smoothing: antialiased;
-  text-rendering: optimizeLegibility;
-  -moz-osx-font-smoothing: grayscale;
-  font-feature-settings: 'liga';
+  // -webkit-font-smoothing: antialiased;
+  // text-rendering: optimizeLegibility;
+  // -moz-osx-font-smoothing: grayscale;
+  // font-feature-settings: 'liga';
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -65,6 +65,9 @@ input[type="checkbox"] {
 }
 [class*="icon-"] {
   display: inline-block;
+  vertical-align: middle;
+  line-height: 40px;
+  font-size: 0;
 }
 [class*="icon-"]:before {
   font-weight: normal;
@@ -85,10 +88,34 @@ input[type="checkbox"] {
 .icon-flexiblegs:before {
   width: 40px;
 }
+
+.icon-md {
+  line-height: 36px;
+}
+.icon-md:before {
+  font-size: 36px;
+  width: 36px;
+  height: 36px;
+}
+
+.icon-sm {
+  line-height: 24px;
+}
 .icon-sm:before {
   font-size: 24px;
-  height: 1em;
+  width: 24px;
+  height: 24px;
 }
+
+.icon-xs {
+  line-height: 16px;
+}
+.icon-xs:before {
+  font-size: 16px;
+  width: 16px;
+  height: 16px;
+}
+
 .xl-ffscp {
   font-family: Source Code Pro;
 }

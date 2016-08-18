@@ -2,14 +2,12 @@
 
 import React from 'react';
 
-import Header from '../partials/Header'
-import Layout from '../partials/Layout'
-import Footer from '../partials/Footer'
+import Layout from '../partial/Layout'
 
 var Install = React.createClass({
   render: function() {
     return (
-      <Layout name="Install" />
+      <Layout page="install" />
     )
   }
 });

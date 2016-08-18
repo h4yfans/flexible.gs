@@ -5,7 +5,7 @@ let EventEmitter = require('events').EventEmitter;
 
 let LanguageApi =  require('../api/LanguageApi');
 
-const ACTION_TYPES = require('../constants/LanguageConstants');
+const ACTION_TYPES = require('../constant/LanguageConstant');
 const CHANGE_EVENT = 'change';
 
 let _content;

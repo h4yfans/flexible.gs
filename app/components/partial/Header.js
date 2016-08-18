@@ -3,12 +3,12 @@
 import React from 'react';
 import { Link } from 'react-router'
 
-let LanguageActions = require('../../actions/LanguageActions');
+let LanguageAction = require('../../action/LanguageAction');
 
 var Header = React.createClass({
 
   switchLanguage: function(key, event) {
-    LanguageActions.switchLanguage(key);
+    LanguageAction.switchLanguage(key);
   },
 
   render: function() {
@@ -18,32 +18,32 @@ var Header = React.createClass({
           <div className="wrap xl-flexbox xl-between">
             <div className="col">
               <Link className="icon-flexiblegs xl-vam xl-dib xl-p8 xl-mr8 xl-co-white ho-co-gray-500" to="/"></Link>
-              <Link className="xl-vam xl-dib xl-p8 xl-fs14 xl-fw400 xl-co-gray-500 ho-co-white" to="/">{this.props.content.general.homepage}</Link>
-              <Link className="xl-vam xl-dib xl-p8 xl-fs14 xl-fw400 xl-co-gray-500 ho-co-white" to="/install">{this.props.content.general.install}</Link>
-              <Link className="xl-vam xl-dib xl-p8 xl-fs14 xl-fw400 xl-co-gray-500 ho-co-white" to="/learn">{this.props.content.general.learn}</Link>
-              <Link className="xl-vam xl-dib xl-p8 xl-fs14 xl-fw400 xl-co-gray-500 ho-co-white" to="/compatibility">{this.props.content.general.compatibility}</Link>
-              <Link className="xl-vam xl-dib xl-p8 xl-fs14 xl-fw400 xl-co-gray-500 ho-co-white" to="/responsive-test">{this.props.content.general.responsive_test}</Link>
-              <Link className="xl-vam xl-dib xl-p8 xl-fs14 xl-fw400 xl-co-gray-500 ho-co-white" to="/motivation">{this.props.content.general.motivation}</Link>
-              <Link className="xl-vam xl-dib xl-p8 xl-fs14 xl-fw400 xl-co-gray-500 ho-co-white" to="/future">{this.props.content.general.future}</Link>
+              <Link className="xl-vam xl-dib xl-p8 xl-fs14 xl-fw400 xl-co-gray-500 ho-co-white" to="/">{this.props.content.homepage}</Link>
+              <Link className="xl-vam xl-dib xl-p8 xl-fs14 xl-fw400 xl-co-gray-500 ho-co-white" to="/install">{this.props.content.install}</Link>
+              <Link className="xl-vam xl-dib xl-p8 xl-fs14 xl-fw400 xl-co-gray-500 ho-co-white" to="/learn">{this.props.content.learn}</Link>
+              <Link className="xl-vam xl-dib xl-p8 xl-fs14 xl-fw400 xl-co-gray-500 ho-co-white" to="/compatibility">{this.props.content.compatibility}</Link>
+              <Link className="xl-vam xl-dib xl-p8 xl-fs14 xl-fw400 xl-co-gray-500 ho-co-white" to="/responsive-test">{this.props.content.responsiveTest}</Link>
+              <Link className="xl-vam xl-dib xl-p8 xl-fs14 xl-fw400 xl-co-gray-500 ho-co-white" to="/motivation">{this.props.content.motivation}</Link>
+              <Link className="xl-vam xl-dib xl-p8 xl-fs14 xl-fw400 xl-co-gray-500 ho-co-white" to="/future">{this.props.content.future}</Link>
             </div>
             <div className="col">
               <a href="https://github.com/flexiblegs" target="_blank" className="icon-github-alt icon-sm xl-vam xl-dib xl-co-black-100 ho-co-white xl-p8 xl-mr8"></a>
               <a href="https://twitter.com/flexiblegs" target="_blank" className="icon-twitter icon-sm xl-vam xl-dib xl-co-black-100 ho-co-white xl-p8 xl-mr8"></a>
               <a href="https://www.youtube.com/channel/UCik0QP2GXULQfQTl7VGzDWA" target="_blank" className="icon-youtube-play icon-sm xl-vam xl-dib xl-co-black-100 ho-co-white xl-p8 xl-mr16"></a>
-              {this.props.content.lang == "en" &&
+              {this.props.lang == "en" &&
                 <a
                   href="#"
                   data-target="#"
-                  className="xl-vam xl-dib xl-p8 xl-fs14 xl-fw400 xl-co-gray-500 ho-co-white"
+                  className="xl-ffscp xl-vam xl-px8 xl-dib xl-fs14 xl-lh24 xl-fw400 xl-ba-white xl-br4 xl-co-black-500"
                   onClick={this.switchLanguage.bind(this,'tr')}>
                   Türkçe
                 </a>
               }
-              {this.props.content.lang == "tr" &&
+              {this.props.lang == "tr" &&
                 <a
                   href="#"
                   data-target="#"
-                  className="xl-vam xl-dib xl-p8 xl-fs14 xl-fw400 xl-co-gray-500 ho-co-white"
+                  className="xl-ffscp xl-vam xl-px8 xl-dib xl-fs14 xl-lh24 xl-fw400 xl-ba-white xl-br4 xl-co-black-500"
                   onClick={this.switchLanguage.bind(this,'en')}>
                   English
                 </a>

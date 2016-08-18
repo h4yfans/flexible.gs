@@ -1,100 +1,119 @@
 [
   {
     "lang": "en",
-    "general": {
+    "header": {
       "homepage": "Homepage",
       "install": "Install",
       "learn": "Learn",
       "compatibility": "Compatibility",
-      "responsive_test": "Responsive Test",
+      "responsiveTest": "Responsive Test",
       "motivation": "Motivation",
-      "future": "Future",
+      "future": "Future"
+    },
+    "common": {
       "static": "Static",
       "dynamic": "Dynamic",
-      "compiled_view": "Compiled View",
+      "responsiveMeta": "Responsive Meta",
+      "compiledView": "Compiled View",
       "browser": "Browser",
       "framework": "Framework",
-      "and_more": "and more",
-      "keyboard_shortcuts": "Keyboard Shortcuts: Previous Next",
-      "i_love_flexiblegs": "I Love Flexible Grid System",
+      "andMore": "and more"
+    },
+    "footer": {
+      "keyboardShortcuts": "Keyboard Shortcuts: Previous Next",
+      "iLoveFlexibleGridSystem": "I Love Flexible Grid System"
     },
     "homepage": {
-      "line_001": "Flexible Grid System is a Responsive CSS Framework.",
-      "line_002": "This framework will let you create your web applications in a flexible way that you've never experienced before.",
+      "line001": "Flexible Grid System is a Responsive CSS Framework.",
+      "line002": "This framework will let you create your web applications in a flexible way that you've never experienced before.",
     },
     "install": {
-      "line_001": "Before installation, we assume that you know HTML, CSS, Sass, Less or Stylus.",
-      "line_002": "There are two methods of developing with Flexible Grid System. These methods are Static and Dynamic. You can use the both method at the same time or independently.",
-      "line_003": "If you choose the Static method. You can use CSS classes to code your HTML.",
-      "line_004": "If you choose the Dynamic method. You can use Sass, Less or Stylus mixins to code your CSS.",
-      "download_the_file": "Download the file",
-      "and_add_the_project_as_follows": "and add the project as follows."
+      "line001": "Before installation, we assume that you know HTML, CSS, Sass, Less or Stylus.",
+      "line002": "There are two methods of developing with Flexible Grid System. These methods are Static and Dynamic. You can use the both method at the same time or independently.",
+      "line003": "If you choose the Static method. You can use CSS classes to code your HTML.",
+      "line004": "If you choose the Dynamic method. You can use Sass, Less or Stylus mixins to code your CSS.",
+      "downloadTheFile": "Download the file",
+      "andAddTheProjectAsFollows": "and add the project as follows."
     },
     "learn": {
-      "line_001": "Before starting learn you need to know about Grid System and Responive Design.",
-      "line_002": "Switching to compile view you view the CSS properties of classes and mixins. Having a knowledge about this topic will improve your usage.",
-      "line_003": "On CSS section static, on Sass, Less or Stylus sections dynamic sections are marked as @variable.",
-      "line_004": "For browser compatability -ms, -moz and -webkit aren't added to the samples."
+      "line001": "Before starting learn you need to know about Grid System and Responive Design.",
+      "line002": "Switching to compile view you view the CSS properties of classes and mixins. Having a knowledge about this topic will improve your usage.",
+      "line003": "On CSS section static, on Sass, Less or Stylus sections dynamic sections are marked as @variable.",
+      "line004": "For browser compatability -ms, -moz and -webkit aren't added to the samples."
     },
     "compatibility": {
-      "line_001": "If you use Responsive Design because of Media Queries we support Internet Explorer 9 and + versions.",
-      "line_002": "If you use Flexbox we support Internet Explorer 10 and + versions.",
-      "line_003": "Other than the two exceptions above we supprt all the major desktop and mobile browsers."
+      "line001": "If you use Responsive Design because of Media Queries we support Internet Explorer 9 and + versions.",
+      "line002": "If you use Flexbox we support Internet Explorer 10 and + versions.",
+      "line003": "Other than the two exceptions above we supprt all the major desktop and mobile browsers."
     },
     "motivation": {
-      "line_001": "The links that makes us super happy and motivated."
+      "line001": "The links that makes us super happy and motivated."
     },
     "future": {
-      "line_001": "To make our future plans a reality you can support us via PayPal or Gratipay."
+      "contentManagementSystem": "Content Management System",
+      "coffee": "Coffee",
+      "logoShapedCakeMold": "Logo Shaped Cake Mold"
+    },
+    "pageNotFound": {
+      "line001": "Page not found."
     }
   },
   {
     "lang": "tr",
-    "general": {
+    "header": {
       "homepage": "Anasayfa",
       "install": "Kurulum",
       "learn": "Öğrenme",
       "compatibility": "Uyumluluk",
-      "responsive_test": "Responsive Test",
+      "responsiveTest": "Responsive Test",
       "motivation": "Motivasyon",
-      "future": "Gelecek",
+      "future": "Gelecek"
+    },
+    "common": {
       "static": "Statik",
       "dynamic": "Dinamik",
       "browser": "Tarayıcı",
-      "compiled_view": "Derlenmiş Görünüm",
+      "compiledView": "Derlenmiş Görünüm",
       "framework": "Framework",
-      "and_more": "ve daha fazlası",
-      "keyboard_shortcuts": "Klavye Kısayolları: Önceki Sonraki",
-      "i_love_flexiblegs": "Flexible Grid System'i Seviyorum",
+      "andMore": "ve daha fazlası"
+    },
+    "footer": {
+      "keyboardShortcuts": "Klavye Kısayolları: Önceki Sonraki",
+      "iLoveFlexibleGridSystem": "Flexible Grid System'i Seviyorum"
     },
     "homepage": {
-      "line_001": "Flexible Grid System bir Responsive CSS Framework'üdür.",
-      "line_002": "Bu framework sayesinde web uygulamalarınızı hiç olmadığı kadar esnek şekilde kodlamanız mümkündür.",
+      "line001": "Flexible Grid System bir Responsive CSS Framework'üdür.",
+      "line002": "Bu framework sayesinde web uygulamalarınızı hiç olmadığı kadar esnek şekilde kodlamanız mümkündür.",
     },
     "install": {
-      "line_001": "Kuruluma başlamadan önce HTML, CSS veya Sass, Less ya da Stylus bilmeniz gerekmektedir.",
-      "line_002": "Flexible Grid System ile kod yazmanın iki yöntemi bulunmaktadır. Bunlar Statik ve Dinamik olmak üzere ikiye ayrılır. İki yöntemi aynı anda ya da ayrı ayrı kullanmanız mümkündür.",
-      "line_003": "Statik yönetimi tercih ederseniz Flexible Grid System'in CSS ile hazırlanmış sabit classlarını kullanarak HTML kısmında kodlama yapabilirsiniz.",
-      "line_004": "Dinamik yöntemi tercih ederseniz Flexible Grid System'in Sass, Less veya Stylus ile hazırlanmış mixinlerini kullanarak CSS kısmında kodlama yapabilirsiniz.",
-      "download_the_file": "Dosyayı indirin",
-      "and_add_the_project_as_follows": "ve aşağıdaki gibi projenize ekleyin."
+      "line001": "Kuruluma başlamadan önce HTML, CSS veya Sass, Less ya da Stylus bilmeniz gerekmektedir.",
+      "line002": "Flexible Grid System ile kod yazmanın iki yöntemi bulunmaktadır. Bunlar Statik ve Dinamik olmak üzere ikiye ayrılır. İki yöntemi aynı anda ya da ayrı ayrı kullanmanız mümkündür.",
+      "line003": "Statik yönetimi tercih ederseniz Flexible Grid System'in CSS ile hazırlanmış sabit classlarını kullanarak HTML kısmında kodlama yapabilirsiniz.",
+      "line004": "Dinamik yöntemi tercih ederseniz Flexible Grid System'in Sass, Less veya Stylus ile hazırlanmış mixinlerini kullanarak CSS kısmında kodlama yapabilirsiniz.",
+      "downloadTheFile": "Dosyayı indirin",
+      "andAddTheProjectAsFollows": "ve aşağıdaki gibi projenize ekleyin."
     },
     "learn": {
-      "line_001": "Öğrenmeye başlamadan önce Grid System ve Responive Design hakkında bilgi sahibi olmanız gerekmektedir.",
-      "line_002": "Derlenmiş görünüme geçiş yaparak class veya mixinlerin oluşturduğu CSS özelliklerini görebilirsiniz. Bu konuda bilgi sahibi olmanız kullanım hakimiyetiniz açısından oldukça faydalı olacaktır.",
-      "line_003": "CSS kısmında sabit, Sass, Less veya Stylus kısmında dinamik olacak kısımlar @değişken şeklinde belirtilmektedir.",
-      "line_004": "Browser uyumluluğu için gereken -ms, -moz ve -webkit yazımları eklenmemiştir."
+      "line001": "Öğrenmeye başlamadan önce Grid System ve Responive Design hakkında bilgi sahibi olmanız gerekmektedir.",
+      "line002": "Derlenmiş görünüme geçiş yaparak class veya mixinlerin oluşturduğu CSS özelliklerini görebilirsiniz. Bu konuda bilgi sahibi olmanız kullanım hakimiyetiniz açısından oldukça faydalı olacaktır.",
+      "line003": "CSS kısmında sabit, Sass, Less veya Stylus kısmında dinamik olacak kısımlar @değişken şeklinde belirtilmektedir.",
+      "line004": "Browser uyumluluğu için gereken -ms, -moz ve -webkit yazımları eklenmemiştir."
     },
     "compatibility": {
-      "line_001": "Responsive Design olarak kodlama yapıyorsak Media Queries kullanımından kaynaklı Internet Explorer 9 ve üzeri versiyonları destekliyoruz.",
-      "line_002": "Flexbox özelliğini kullanıyorsak Internet Explorer 10 ve üzeri versiyonları destekliyoruz.",
-      "line_003": "Yukarıdaki iki durum dışında tüm masaüstü ve mobil browserlara destek verilmektedir."
+      "line001": "Responsive Design olarak kodlama yapıyorsak Media Queries kullanımından kaynaklı Internet Explorer 9 ve üzeri versiyonları destekliyoruz.",
+      "line002": "Flexbox özelliğini kullanıyorsak Internet Explorer 10 ve üzeri versiyonları destekliyoruz.",
+      "line003": "Yukarıdaki iki durum dışında tüm masaüstü ve mobil browserlara destek verilmektedir."
     },
     "motivation": {
-      "line_001": "Projeye dört elle sarılmamızı sağlayan bazı linkler."
+      "line001": "Projeye dört elle sarılmamızı sağlayan bazı linkler."
     },
     "future": {
-      "line_001": "Gelecek planlarını daha hızlı uygulayabilmemiz için PayPal veya Gratipay aracılığıyla bağış yapabilirsiniz."
+      "contentManagementSystem": "İçerik Yönetim Sistemi",
+      "coffee": "Kahve",
+      "logoShapedCakeMold": "Logo Şeklinde Kek Kalıbı"
+    },
+    "pageNotFound": {
+      "line001": "Sayfa bulunamadı."
     }
   }
 ]

@@ -2,12 +2,12 @@
 
 import React from 'react';
 
-import Layout from '../partials/Layout'
+import Layout from '../partial/Layout'
 
 var Motivation = React.createClass({
   render: function() {
     return (
-      <Layout name="Motivation" />
+      <Layout page="motivation" />
     )
   }
 });

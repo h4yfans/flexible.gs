@@ -6,7 +6,7 @@ var Sidebar = React.createClass({
   render: function() {
     return (
       <div>
-        {this.props.content.lang == "en" &&
+        {this.props.lang == "en" &&
           <div id="mc_embed_signup">
             <form action="//dnomak.us8.list-manage.com/subscribe/post?u=0cfb9d416ef45eba73b6368b6&amp;id=1ddadb165c" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank">
               <div id="mc_embed_signup_scroll">
