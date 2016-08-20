@@ -6,7 +6,7 @@ var Sidebar = React.createClass({
   render: function() {
     return (
       <div>
-        <a href="https://youtu.be/4306ejHx17Y" target="_target" className="xl-db xl-co-black-500 xl-bw4 xl-bo-black-500 xl-pr xl-mb24 xl-br8 xl-oh flexiblegs-presentation">
+        <a href="https://youtu.be/4306ejHx17Y" target="_target" className="xl-db xl-co-white xl-bw4 xl-bo-white xl-pr xl-mb24 xl-br8 xl-oh flexiblegs-presentation">
           <em className="xl-1-1 xl-tac xl-pa xl-t50p xl-tty-50p icon-youtube-play icon-xl" />
         </a>
         {this.props.lang == "en" &&
