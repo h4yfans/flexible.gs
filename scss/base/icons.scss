@@ -39,26 +39,20 @@
 	@if $filename == github-alt {
 		$char: "\E004";
 	}
-	@if $filename == gratipay {
+	@if $filename == heart {
 		$char: "\E005";
 	}
-	@if $filename == heart {
+	@if $filename == long-arrow-left {
 		$char: "\E006";
 	}
-	@if $filename == long-arrow-left {
+	@if $filename == long-arrow-right {
 		$char: "\E007";
 	}
-	@if $filename == long-arrow-right {
+	@if $filename == twitter {
 		$char: "\E008";
 	}
-	@if $filename == paypal {
-		$char: "\E009";
-	}
-	@if $filename == twitter {
-		$char: "\E00A";
-	}
 	@if $filename == youtube-play {
-		$char: "\E00B";
+		$char: "\E009";
 	}
 
 	@return $char;
@@ -87,9 +81,6 @@
 .icon-github-alt {
 	@include icon(github-alt);
 }
-.icon-gratipay {
-	@include icon(gratipay);
-}
 .icon-heart {
 	@include icon(heart);
 }
@@ -98,9 +89,6 @@
 }
 .icon-long-arrow-right {
 	@include icon(long-arrow-right);
-}
-.icon-paypal {
-	@include icon(paypal);
 }
 .icon-twitter {
 	@include icon(twitter);

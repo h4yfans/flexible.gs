@@ -6,16 +6,16 @@ var InstallContent = React.createClass({
   render: function() {
     return (
       <div>
-        <div>{this.props.content.line001}</div>
-        <div>{this.props.content.line002}</div>
-        <div className="wrap xl-2 xl-gutter-16 xl-mt8">
+        <div dangerouslySetInnerHTML={{__html:this.props.content.line001}}></div>
+        <div dangerouslySetInnerHTML={{__html:this.props.content.line002}}></div>
+        <div className="wrap xl-2 xl-gutter-16 xl-top xl-mt8">
           <div className="col xl-fs18">
             <div className="xl-fw600">{this.props.common.static}</div>
-            <div>{this.props.content.line003}</div>
+            <div dangerouslySetInnerHTML={{__html:this.props.content.line003}}></div>
           </div>
           <div className="col xl-fs18">
             <div className="xl-fw600">{this.props.common.dynamic}</div>
-            <div>{this.props.content.line004}</div>
+            <div dangerouslySetInnerHTML={{__html:this.props.content.line004}}></div>
           </div>
         </div>
       </div>

@@ -44,8 +44,8 @@ var Layout = React.createClass({
         <Header lang={this.state.content.lang} content={this.state.content.header} />
         <div className="xl-m24">
           <div className="xl-maw1280 xl-ma">
-            <div className="wrap xl-table xl-gutter-24 xl-top">
-              <div className="col">
+            <div className="wrap xl-gutter-24 xl-top">
+              <div className="col xl-9-12">
                 <div className="xl-tal xl-px24 xl-py16 xl-co-black-500 xl-br8 xl-ba-white xl-bw2 xl-bo-gray-200">
 
                   {this.props.page == "homepage" &&
@@ -114,7 +114,7 @@ var Layout = React.createClass({
                 </div>
                 <Footer content={this.state.content.footer}/>
               </div>
-              <div className="col xl-width-360">
+              <div className="col xl-3-12">
                 <Sidebar lang={this.state.content.lang}/>
               </div>
             </div>

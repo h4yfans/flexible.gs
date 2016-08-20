@@ -5,7 +5,7 @@ import React from 'react';
 var PageNotFoundContent = React.createClass({
   render: function() {
     return (
-      <div>{this.props.content.line001}</div>
+      <div dangerouslySetInnerHTML={{__html:this.props.content.line001}}></div>
     )
   }
 });

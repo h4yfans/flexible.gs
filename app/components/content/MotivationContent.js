@@ -6,7 +6,7 @@ var MotivationContent = React.createClass({
   render: function() {
     return (
       <div>
-        <div>{this.props.content.line001}</div>
+        <div dangerouslySetInnerHTML={{__html:this.props.content.line001}}></div>
         <div className="wrap xl-gutter-16 xl-3 xl-mt8">
           <div className="col xl-fs18"><a className="xl-db xl-bo-gray-200 xl-ba-gray-100 xl-px16 xl-py8 xl-my8 xl-bw2 xl-br8 xl-co-black-500" target="_blank" href="https://github.com/showcases/design-essentials">github.com</a></div>
           <div className="col xl-fs18"><a className="xl-db xl-bo-gray-200 xl-ba-gray-100 xl-px16 xl-py8 xl-my8 xl-bw2 xl-br8 xl-co-black-500" target="_blank" href="http://sass-lang.com/community">sass-lang.com</a></div>

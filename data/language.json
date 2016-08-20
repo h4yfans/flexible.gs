@@ -20,30 +20,30 @@
       "andMore": "and more"
     },
     "footer": {
-      "keyboardShortcuts": "Keyboard Shortcuts: Previous Next",
-      "iLoveFlexibleGridSystem": "I Love Flexible Grid System"
+      "keyboardShortcuts": "<span class='xl-di xl-vam xl-pr8'>Keyboard Shortcuts:</span><em class='icon-long-arrow-left icon-xs'></em><span class='xl-di xl-vam xl-px8'>Previous</span><em class='icon-long-arrow-right icon-xs'></em><span class='xl-di xl-vam xl-pl8'>Next</span>",
+      "iLoveFlexibleGridSystem": "<span class='xl-di xl-vam xl-pr8'>I</span><span class='xl-co-red-300'><em class='icon-heart icon-xs'></em><span class='xl-di xl-vam xl-pl8'>Love</span></span><span class='xl-di xl-vam xl-pl8'>Flexible Grid System</span>"
     },
     "homepage": {
-      "line001": "Flexible Grid System is a Responsive CSS Framework.",
+      "line001": "Flexible Grid System is a <span class='xl-fw400'>Responsive CSS Framework.</span>",
       "line002": "This framework will let you create your web applications in a flexible way that you've never experienced before.",
     },
     "install": {
-      "line001": "Before installation, we assume that you know HTML, CSS, Sass, Less or Stylus.",
+      "line001": "Before installation, we assume that you know <span class='xl-fw400'>HTML</span>, <span class='xl-fw400'>CSS</span>, <span class='xl-fw400'>Sass</span>, <span class='xl-fw400'>Less</span> or <span class='xl-fw400'>Stylus</span>.",
       "line002": "There are two methods of developing with Flexible Grid System. These methods are Static and Dynamic. You can use the both method at the same time or independently.",
-      "line003": "If you choose the Static method. You can use CSS classes to code your HTML.",
-      "line004": "If you choose the Dynamic method. You can use Sass, Less or Stylus mixins to code your CSS.",
+      "line003": "If you choose the Static method. You can use CSS <span class='xl-fw400'>class</span>es to code your <span class='xl-fw400'>HTML</span>.",
+      "line004": "If you choose the Dynamic method. You can use Sass, Less or Stylus <span class='xl-fw400'>mixin</span>s to code your <span class='xl-fw400'>CSS</span>.",
       "downloadTheFile": "Download the file",
       "andAddTheProjectAsFollows": "and add the project as follows."
     },
     "learn": {
-      "line001": "Before starting learn you need to know about Grid System and Responive Design.",
+      "line001": "Before starting learn you need to know about <span class='xl-fw400'>Grid System</span> and <span class='xl-fw400'>Responive Design</span>.",
       "line002": "Switching to compile view you view the CSS properties of classes and mixins. Having a knowledge about this topic will improve your usage.",
-      "line003": "On CSS section static, on Sass, Less or Stylus sections dynamic sections are marked as @variable.",
-      "line004": "For browser compatability -ms, -moz and -webkit aren't added to the samples."
+      "line003": "On <span class='xl-fw400'>CSS</span> section static, on <span class='xl-fw400'>Sass</span>, <span class='xl-fw400'>Less</span> or <span class='xl-fw400'>Stylus</span> sections dynamic sections are marked as <span class='xl-fw400'>@variable</span>.",
+      "line004": "For browser compatability <span class='xl-fw400'>-ms</span>, <span class='xl-fw400'>-moz</span> and <span class='xl-fw400'>-webkit</span> aren't added to the samples."
     },
     "compatibility": {
-      "line001": "If you use Responsive Design because of Media Queries we support Internet Explorer 9 and + versions.",
-      "line002": "If you use Flexbox we support Internet Explorer 10 and + versions.",
+      "line001": "If you use <span class='xl-fw400'>Responsive Design</span> because of <span class='xl-fw400'>Media Queries</span> we support <span class='xl-fw400'>Internet Explorer 9 and +</span> versions.",
+      "line002": "If you use <span class='xl-fw400'>Flexbox</span> we support <span class='xl-fw400'>Internet Explorer 10 and +</span> versions.",
       "line003": "Other than the two exceptions above we supprt all the major desktop and mobile browsers."
     },
     "motivation": {
@@ -78,30 +78,30 @@
       "andMore": "ve daha fazlası"
     },
     "footer": {
-      "keyboardShortcuts": "Klavye Kısayolları: Önceki Sonraki",
-      "iLoveFlexibleGridSystem": "Flexible Grid System'i Seviyorum"
+      "keyboardShortcuts": "<span class='xl-di xl-vam xl-pr8'>Klavye Kısayolları:</span><em class='icon-long-arrow-left icon-xs'></em><span class='xl-di xl-vam xl-px8'>Önceki</span><em class='icon-long-arrow-right icon-xs'></em><span class='xl-di xl-vam xl-pl8'>Sonraki</span>",
+      "iLoveFlexibleGridSystem": "<span class='xl-di xl-vam xl-pr8'>Flexible Grid System'i</span><span class='xl-co-red-300'><em class='icon-heart icon-xs'></em><span class='xl-di xl-vam xl-pl8'>Seviyorum</span></span>"
     },
     "homepage": {
-      "line001": "Flexible Grid System bir Responsive CSS Framework'üdür.",
+      "line001": "Flexible Grid System bir <span class='xl-fw400'>Responsive CSS Framework</span>'üdür.",
       "line002": "Bu framework sayesinde web uygulamalarınızı hiç olmadığı kadar esnek şekilde kodlamanız mümkündür.",
     },
     "install": {
-      "line001": "Kuruluma başlamadan önce HTML, CSS veya Sass, Less ya da Stylus bilmeniz gerekmektedir.",
+      "line001": "Kuruluma başlamadan önce <span class='xl-fw400'>HTML</span>, <span class='xl-fw400'>CSS</span> veya <span class='xl-fw400'>Sass</span>, <span class='xl-fw400'>Less</span> ya da <span class='xl-fw400'>Stylus</span> bilmeniz gerekmektedir.",
       "line002": "Flexible Grid System ile kod yazmanın iki yöntemi bulunmaktadır. Bunlar Statik ve Dinamik olmak üzere ikiye ayrılır. İki yöntemi aynı anda ya da ayrı ayrı kullanmanız mümkündür.",
-      "line003": "Statik yönetimi tercih ederseniz Flexible Grid System'in CSS ile hazırlanmış sabit classlarını kullanarak HTML kısmında kodlama yapabilirsiniz.",
-      "line004": "Dinamik yöntemi tercih ederseniz Flexible Grid System'in Sass, Less veya Stylus ile hazırlanmış mixinlerini kullanarak CSS kısmında kodlama yapabilirsiniz.",
+      "line003": "Statik yönetimi tercih ederseniz Flexible Grid System'in CSS ile hazırlanmış sabit <span class='xl-fw400'>class</span>larını kullanarak <span class='xl-fw400'>HTML</span> kısmında kodlama yapabilirsiniz.",
+      "line004": "Dinamik yöntemi tercih ederseniz Flexible Grid System'in Sass, Less veya Stylus ile hazırlanmış <span class='xl-fw400'>mixin</span>lerini kullanarak <span class='xl-fw400'>CSS</span> kısmında kodlama yapabilirsiniz.",
       "downloadTheFile": "Dosyayı indirin",
       "andAddTheProjectAsFollows": "ve aşağıdaki gibi projenize ekleyin."
     },
     "learn": {
-      "line001": "Öğrenmeye başlamadan önce Grid System ve Responive Design hakkında bilgi sahibi olmanız gerekmektedir.",
+      "line001": "Öğrenmeye başlamadan önce <span class='xl-fw400'>Grid System</span> ve <span class='xl-fw400'>Responive Design</span> hakkında bilgi sahibi olmanız gerekmektedir.",
       "line002": "Derlenmiş görünüme geçiş yaparak class veya mixinlerin oluşturduğu CSS özelliklerini görebilirsiniz. Bu konuda bilgi sahibi olmanız kullanım hakimiyetiniz açısından oldukça faydalı olacaktır.",
-      "line003": "CSS kısmında sabit, Sass, Less veya Stylus kısmında dinamik olacak kısımlar @değişken şeklinde belirtilmektedir.",
-      "line004": "Browser uyumluluğu için gereken -ms, -moz ve -webkit yazımları eklenmemiştir."
+      "line003": "<span class='xl-fw400'>CSS</span> kısmında sabit, <span class='xl-fw400'>Sass</span>, <span class='xl-fw400'>Less</span> veya <span class='xl-fw400'>Stylus</span> kısmında dinamik olacak kısımlar <span class='xl-fw400'>@değişken</span> şeklinde belirtilmektedir.",
+      "line004": "Browser uyumluluğu için gereken <span class='xl-fw400'>-ms</span>, <span class='xl-fw400'>-moz</span> ve <span class='xl-fw400'>-webkit</span> yazımları eklenmemiştir."
     },
     "compatibility": {
-      "line001": "Responsive Design olarak kodlama yapıyorsak Media Queries kullanımından kaynaklı Internet Explorer 9 ve üzeri versiyonları destekliyoruz.",
-      "line002": "Flexbox özelliğini kullanıyorsak Internet Explorer 10 ve üzeri versiyonları destekliyoruz.",
+      "line001": "<span class='xl-fw400'>Responsive Design</span> olarak kodlama yapıyorsak <span class='xl-fw400'>Media Queries</span> kullanımından kaynaklı <span class='xl-fw400'>Internet Explorer 9 ve üzeri</span> versiyonları destekliyoruz.",
+      "line002": "<span class='xl-fw400'>Flexbox</span> özelliğini kullanıyorsak <span class='xl-fw400'>Internet Explorer 10 ve üzeri</span> versiyonları destekliyoruz.",
       "line003": "Yukarıdaki iki durum dışında tüm masaüstü ve mobil browserlara destek verilmektedir."
     },
     "motivation": {

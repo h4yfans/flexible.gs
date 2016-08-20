@@ -7,10 +7,10 @@ var Footer = React.createClass({
     return (
       <div className="wrap xl-2 xl-ffscp xl-mb24 xl-co-gray-500 xl-mt24">
         <div className="col xl-fs14 xl-tal">
-          {this.props.content.keyboardShortcuts}
+          <div dangerouslySetInnerHTML={{__html:this.props.content.keyboardShortcuts}}></div>
         </div>
         <div className="col xl-fs14 xl-tar">
-          {this.props.content.iLoveFlexibleGridSystem}
+          <a className="xl-db xl-co-gray-500" href="https://github.com/dnomak" target="_blank" dangerouslySetInnerHTML={{__html:this.props.content.iLoveFlexibleGridSystem}}></a>
         </div>
       </div>
     );
