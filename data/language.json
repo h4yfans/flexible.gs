@@ -19,6 +19,12 @@
       "framework": "Framework",
       "andMore": "and more"
     },
+    "mailchimp": {
+      "id": "1ddadb165c",
+      "name": "b_0cfb9d416ef45eba73b6368b6_1ddadb165c",
+      "emailAddress": "Email Address",
+      "subscribe": "Subscribe"
+    },
     "footer": {
       "keyboardShortcuts": "<span class='xl-di xl-vam xl-pr8'>Keyboard Shortcuts:</span><em class='icon-long-arrow-left icon-xs'></em><span class='xl-di xl-vam xl-px8'>Previous</span><em class='icon-long-arrow-right icon-xs'></em><span class='xl-di xl-vam xl-pl8'>Next</span>",
       "iLoveFlexibleGridSystem": "<span class='xl-di xl-vam xl-pr8'>I</span><span class='xl-co-red-300'><em class='icon-heart icon-xs'></em><span class='xl-di xl-vam xl-pl8'>Love</span></span><span class='xl-di xl-vam xl-pl8'>Flexible Grid System</span>"
@@ -76,6 +82,12 @@
       "compiledView": "Derlenmiş Görünüm",
       "framework": "Framework",
       "andMore": "ve daha fazlası"
+    },
+    "mailchimp": {
+      "id": "76e0132742",
+      "name": "b_0cfb9d416ef45eba73b6368b6_76e0132742",
+      "emailAddress": "Email Adresiniz",
+      "subscribe": "Abone Ol"
     },
     "footer": {
       "keyboardShortcuts": "<span class='xl-di xl-vam xl-pr8'>Klavye Kısayolları:</span><em class='icon-long-arrow-left icon-xs'></em><span class='xl-di xl-vam xl-px8'>Önceki</span><em class='icon-long-arrow-right icon-xs'></em><span class='xl-di xl-vam xl-pl8'>Sonraki</span>",
