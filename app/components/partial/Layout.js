@@ -6,7 +6,7 @@ import Header from '../partial/Header'
 import Sidebar from '../partial/Sidebar'
 import Footer from '../partial/Footer'
 
-import HeaderContent from '../content/HeaderContent'
+import Title from '../partial/Title'
 import HomepageContent from '../content/HomepageContent'
 import InstallContent from '../content/InstallContent'
 import LearnContent from '../content/LearnContent'
@@ -37,12 +37,7 @@ var Layout = React.createClass({
     this.setState({ content: LanguageStore.getContent() });
   },
 
-  changeTitle: function () {
-    document.title = this.state.content.header.homepage;
-  },
-
   render: function() {
-    this.changeTitle();
     var contentClass = "xl-lh36 xl-fs18 xl-fw300";
     return (
       <div>
@@ -54,7 +49,7 @@ var Layout = React.createClass({
                 <div className="xl-tal xl-px24 xl-py16 xl-co-black-500 xl-br8 xl-ba-white xl-bw2 xl-bo-gray-200">
                   {this.props.page == "homepage" &&
                     <div>
-                      <HeaderContent content={this.state.content.header.homepage} />
+                      <Title title={this.state.content.header.homepage} />
                       <div className={contentClass}>
                         <HomepageContent content={this.state.content.homepage} header={this.state.content.header} />
                       </div>
@@ -62,7 +57,7 @@ var Layout = React.createClass({
                   }
                   {this.props.page == "install" &&
                     <div>
-                      <HeaderContent content={this.state.content.header.install} />
+                      <Title title={this.state.content.header.install} />
                       <div className={contentClass}>
                         <InstallContent content={this.state.content.install} common={this.state.content.common} />
                       </div>
@@ -70,7 +65,7 @@ var Layout = React.createClass({
                   }
                   {this.props.page == "learn" &&
                     <div>
-                      <HeaderContent content={this.state.content.header.learn} />
+                      <Title title={this.state.content.header.learn} />
                       <div className={contentClass}>
                         <LearnContent content={this.state.content.learn} common={this.state.content.common} />
                       </div>
@@ -78,7 +73,7 @@ var Layout = React.createClass({
                   }
                   {this.props.page == "compatibility" &&
                     <div>
-                      <HeaderContent content={this.state.content.header.compatibility} />
+                      <Title title={this.state.content.header.compatibility} />
                       <div className={contentClass}>
                         <CompatibilityContent content={this.state.content.compatibility} common={this.state.content.common} />
                       </div>
@@ -86,7 +81,7 @@ var Layout = React.createClass({
                   }
                   {this.props.page == "motivation" &&
                     <div>
-                      <HeaderContent content={this.state.content.header.motivation} />
+                      <Title title={this.state.content.header.motivation} />
                       <div className={contentClass}>
                         <MotivationContent content={this.state.content.motivation} />
                       </div>
@@ -94,7 +89,7 @@ var Layout = React.createClass({
                   }
                   {this.props.page == "future" &&
                     <div>
-                      <HeaderContent content={this.state.content.header.future} />
+                      <Title title={this.state.content.header.future} />
                       <div className={contentClass}>
                         <FutureContent content={this.state.content.future} common={this.state.content.common}/>
                       </div>
@@ -102,7 +97,7 @@ var Layout = React.createClass({
                   }
                   {this.props.page == "pageNotFound" &&
                     <div>
-                      <HeaderContent content="404" />
+                      <Title title="404" />
                       <div className={contentClass}>
                         <PageNotFoundContent content={this.state.content.pageNotFound} />
                       </div>

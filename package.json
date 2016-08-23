@@ -26,5 +26,8 @@
   },
   "scripts": {
     "build": "npm install && bower install && gulp"
+  },
+  "dependencies": {
+    "react-document-title": "^2.0.2"
   }
 }
