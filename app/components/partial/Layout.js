@@ -37,7 +37,12 @@ var Layout = React.createClass({
     this.setState({ content: LanguageStore.getContent() });
   },
 
+  changeTitle: function () {
+    document.title = this.state.content.header.homepage;
+  },
+
   render: function() {
+    this.changeTitle();
     var contentClass = "xl-lh36 xl-fs18 xl-fw300";
     return (
       <div>
