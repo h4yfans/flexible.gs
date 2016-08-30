@@ -11,8 +11,9 @@
       "future": "Future"
     },
     "common": {
-      "static": "Static",
-      "dynamic": "Dynamic",
+      "dynamic": "Dynamic (Core)",
+      "static": "Static (Compiled)",
+      "compilationTool": "Compilation Tool",
       "responsiveMeta": "Responsive Meta",
       "compiledView": "Compiled View",
       "browser": "Browser",
@@ -35,9 +36,10 @@
     },
     "install": {
       "line001": "Before installation, we assume that you know <span class='xl-fw400'>HTML</span>, <span class='xl-fw400'>CSS</span>, <span class='xl-fw400'>Sass</span>, <span class='xl-fw400'>Less</span> or <span class='xl-fw400'>Stylus</span>.",
-      "line002": "There are two methods of developing with Flexible Grid System. These methods are Static and Dynamic. You can use the both method at the same time or independently.",
-      "line003": "If you choose the Static method. You can use CSS <span class='xl-fw400'>class</span>es to code your <span class='xl-fw400'>HTML</span>.",
-      "line004": "If you choose the Dynamic method. You can use Sass, Less or Stylus <span class='xl-fw400'>mixin</span>s to code your <span class='xl-fw400'>CSS</span>.",
+      "line002": "There are two methods of developing with Flexible Grid System. These methods are Dynamic and Static. You can use the both method at the same time or independently.",
+      "line003": "If you choose the Dynamic method. You can use Sass, Less or Stylus <span class='xl-fw400'>mixin</span>s to code your <span class='xl-fw400'>CSS</span>.",
+      "line004": "You can use the compilation tool to generate customized output for your project.",
+      "line005": "If you choose the Static method. You can use CSS <span class='xl-fw400'>class</span>es to code your <span class='xl-fw400'>HTML</span>.",
       "downloadTheFile": "Download the file",
       "andAddTheProjectAsFollows": "and add the project as follows."
     },
@@ -76,10 +78,12 @@
       "future": "Gelecek"
     },
     "common": {
-      "static": "Statik",
-      "dynamic": "Dinamik",
-      "browser": "Tarayıcı",
+      "dynamic": "Dinamik (Çekirdek)",
+      "static": "Statik (Derlenmiş)",
+      "compilationTool": "Derleme Aracı",
+      "responsiveMeta": "Responsive Meta",
       "compiledView": "Derlenmiş Görünüm",
+      "browser": "Tarayıcı",
       "framework": "Framework",
       "andMore": "ve daha fazlası"
     },
@@ -99,9 +103,10 @@
     },
     "install": {
       "line001": "Kuruluma başlamadan önce <span class='xl-fw400'>HTML</span>, <span class='xl-fw400'>CSS</span> veya <span class='xl-fw400'>Sass</span>, <span class='xl-fw400'>Less</span> ya da <span class='xl-fw400'>Stylus</span> bilmeniz gerekmektedir.",
-      "line002": "Flexible Grid System ile kod yazmanın iki yöntemi bulunmaktadır. Bunlar Statik ve Dinamik olmak üzere ikiye ayrılır. İki yöntemi aynı anda ya da ayrı ayrı kullanmanız mümkündür.",
-      "line003": "Statik yönetimi tercih ederseniz Flexible Grid System'in CSS ile hazırlanmış sabit <span class='xl-fw400'>class</span>larını kullanarak <span class='xl-fw400'>HTML</span> kısmında kodlama yapabilirsiniz.",
-      "line004": "Dinamik yöntemi tercih ederseniz Flexible Grid System'in Sass, Less veya Stylus ile hazırlanmış <span class='xl-fw400'>mixin</span>lerini kullanarak <span class='xl-fw400'>CSS</span> kısmında kodlama yapabilirsiniz.",
+      "line002": "Flexible Grid System ile kod yazmanın iki yöntemi bulunmaktadır. Bunlar Dinamik ve Statik olmak üzere ikiye ayrılır. İki yöntemi aynı anda ya da ayrı ayrı kullanmanız mümkündür.",
+      "line003": "Dinamik yöntemi tercih ederseniz Flexible Grid System'in Sass, Less veya Stylus ile hazırlanmış <span class='xl-fw400'>mixin</span>lerini kullanarak <span class='xl-fw400'>CSS</span> kısmında kodlama yapabilirsiniz.",
+      "line004": "Derleme aracını kullanarak projenize göre özelleştirme yapıp statik çıktıyı kontrol edebilirsiniz.",
+      "line005": "Statik yönetimi tercih ederseniz Flexible Grid System'in CSS ile hazırlanmış sabit <span class='xl-fw400'>class</span>larını kullanarak <span class='xl-fw400'>HTML</span> kısmında kodlama yapabilirsiniz.",
       "downloadTheFile": "Dosyayı indirin",
       "andAddTheProjectAsFollows": "ve aşağıdaki gibi projenize ekleyin."
     },

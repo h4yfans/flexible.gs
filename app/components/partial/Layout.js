@@ -55,7 +55,7 @@ var Layout = React.createClass({
                       </div>
                     </div>
                   }
-                  {this.props.page == "install" &&
+                  {this.props.page == "install" && !this.props.type &&
                     <div>
                       <Title title={this.state.content.header.install} />
                       <div className={contentClass}>
@@ -63,7 +63,7 @@ var Layout = React.createClass({
                       </div>
                     </div>
                   }
-                  {this.props.page == "learn" &&
+                  {this.props.page == "learn" && !this.props.type &&
                     <div>
                       <Title title={this.state.content.header.learn} />
                       <div className={contentClass}>
@@ -107,7 +107,11 @@ var Layout = React.createClass({
                 <Footer content={this.state.content.footer}/>
               </div>
               <div className="col xl-3-12 lg-2-7">
-                <Sidebar lang={this.state.content.lang} mailchimp={this.state.content.mailchimp}/>
+                <Sidebar
+                  lang={this.state.content.lang}
+                  common={this.state.content.common}
+                  mailchimp={this.state.content.mailchimp}
+                />
               </div>
             </div>
           </div>
