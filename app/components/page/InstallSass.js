@@ -7,7 +7,7 @@ import Layout from '../partial/Layout'
 var InstallSass = React.createClass({
   render: function() {
     return (
-      <Layout page="install" type="scss" />
+      <Layout page="install" type="sass" />
     )
   }
 });

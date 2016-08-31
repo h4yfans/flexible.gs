@@ -11,9 +11,9 @@
       "future": "Future"
     },
     "common": {
-      "dynamic": "Dynamic (Core)",
-      "static": "Static (Compiled)",
-      "compilationTool": "Compilation Tool",
+      "dynamicCore": "Dynamic (Core)",
+      "dynamicCompilationTool": "Dynamic (Compilation Tool)",
+      "staticCompiled": "Static (Compiled)",
       "responsiveMeta": "Responsive Meta",
       "compiledView": "Compiled View",
       "browser": "Browser",
@@ -78,9 +78,9 @@
       "future": "Gelecek"
     },
     "common": {
-      "dynamic": "Dinamik (Çekirdek)",
-      "static": "Statik (Derlenmiş)",
-      "compilationTool": "Derleme Aracı",
+      "dynamicCore": "Dinamik (Çekirdek)",
+      "dynamicCompilationTool": "Dinamik (Derleme Aracı)",
+      "staticCompiled": "Statik (Derlenmiş)",
       "responsiveMeta": "Responsive Meta",
       "compiledView": "Derlenmiş Görünüm",
       "browser": "Tarayıcı",

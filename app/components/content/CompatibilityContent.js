@@ -9,7 +9,7 @@ var CompatibilityContent = React.createClass({
         <div dangerouslySetInnerHTML={{__html:this.props.content.line001}}></div>
         <div dangerouslySetInnerHTML={{__html:this.props.content.line002}}></div>
         <div dangerouslySetInnerHTML={{__html:this.props.content.line003}}></div>
-        <div className="wrap xl-2 xl-gutter-16 xl-top xl-mt8 sm-1">
+        <div className="wrap xl-2 xl-gutter-16 xl-mt8 sm-1">
           <div className="col xl-fs18">
             <div className="xl-fw600">{this.props.common.browser}</div>
             <div>
