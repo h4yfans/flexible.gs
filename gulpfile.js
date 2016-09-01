@@ -39,7 +39,7 @@ gulp.task('browser-sync', function() {
 gulp.task('scss',function() {
   gulp.src('scss/app.scss')
     .pipe(sass({outputStyle: 'expanded'}).on('error', handleErrors))
-    .pipe(rename('bundle.css'))
+    // .pipe(rename('bundle.css'))
     // start minify
     .pipe(sass({outputStyle: 'compressed'}).on('error', handleErrors))
     .pipe(rename('bundle.min.css'))
@@ -77,9 +77,9 @@ function buildScript(file, watch) {
       .pipe(source(file))
       .pipe(rename('bundle.js'))
       // start minify
-      .pipe(buffer())
-      .pipe(uglify())
-      .pipe(rename('bundle.min.js'))
+      // .pipe(buffer())
+      // .pipe(uglify())
+      // .pipe(rename('bundle.min.js'))
       // end minify
       .pipe(gulp.dest('js'))
       .pipe(reload({stream:true}))

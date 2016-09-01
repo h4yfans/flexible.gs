@@ -35,6 +35,7 @@ var Layout = React.createClass({
 
   componentWillMount: function() {
     LanguageStore.addChangeListener(this._onChange);
+
     if(this.props.page == "install" && this.props.type) {
       this.setState({ page: "install" });
     }

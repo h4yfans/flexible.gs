@@ -3,7 +3,66 @@
 import React from 'react';
 import { Link } from 'react-router'
 
+const queryString = require('query-string');
+
 var Sidebar = React.createClass({
+
+  getInitialState: function() {
+    return {
+      type: "css",
+      menuType: "CSS",
+      menuDescription: this.props.common.staticCompiled
+    };
+  },
+
+  componentWillMount: function() {
+    const parsed = queryString.parse(location.search);
+
+    if(parsed.type == "scss" || parsed.type == "sass" || parsed.type == "less" || parsed.type == "stylus") {
+      this.setState({ menuDescription: this.props.common.dynamicCore });
+    }
+    else if (parsed.type == "css" || parsed.type == "bem") {
+      this.setState({ menuDescription: this.props.common.staticCompiled });
+    }
+
+    if (parsed.type == "scss") {
+      this.setState({
+        type: parsed.type,
+        menuType: "Scss"
+      });
+    }
+    else if (parsed.type == "sass") {
+      this.setState({
+        type: parsed.type,
+        menuType: "Sass"
+      });
+    }
+    else if (parsed.type == "less") {
+      this.setState({
+        type: parsed.type,
+        menuType: "Less"
+      });
+    }
+    else if (parsed.type == "stylus") {
+      this.setState({
+        type: parsed.type,
+        menuType: "Stylus"
+      });
+    }
+    else if(parsed.type == "css") {
+      this.setState({
+        type: parsed.type,
+        menuType: "CSS"
+      });
+    }
+    else if (parsed.type == "bem") {
+      this.setState({
+        type: parsed.type,
+        menuType: "BEM"
+      });
+    }
+  },
+
   render: function() {
 
     var inputEmailClass = "xl-1-1 xl-db xl-lh56 xl-h56 xl-ba-white xl-bw2 xl-bo-green-300 xl-brl8 xl-ffscp xl-pl16 lg-pl8 md-pl16";
@@ -29,7 +88,7 @@ var Sidebar = React.createClass({
             <div className="xl-bo-gray-200 xl-bwl2 xl-bwr2 xl-bwt2 xl-ba-gray-200 xl-p16 xl-brt8 xl-fw600 xl-fs18">
               {this.props.content.install}
             </div>
-            <div className="xl-mb24 xl-ba-white xl-fs14 xl-lh20 xl-brb8 xl-bo-gray-200 xl-bw2 xl-oh">
+            <div className="xl-ba-white xl-fs14 xl-lh20 xl-brb8 xl-bo-gray-200 xl-bw2 xl-oh">
               <div className="xl-ba-gray-100 xl-py8 xl-px16 xl-co-black-500">
                 {this.props.common.dynamicCore}
               </div>
@@ -100,44 +159,168 @@ var Sidebar = React.createClass({
             <div className="xl-bo-gray-200 xl-bwl2 xl-bwr2 xl-bwt2 xl-ba-gray-200 xl-p16 xl-brt8 xl-fw600 xl-fs18">
               {this.props.content.learn}
             </div>
-            <div className="xl-mb24 xl-ba-white xl-fs14 xl-lh20 xl-brb8 xl-bo-gray-200 xl-bw2 xl-oh">
+            <div className="xl-ba-white xl-fs14 xl-lh20 xl-brb8 xl-bo-gray-200 xl-bw2 xl-oh">
               <div className="xl-ba-gray-100 xl-py8 xl-px16 xl-co-black-500">
                 <div className="wrap xl-flexbox xl-between xl-auto">
-                  <div className="col xl-fs14">Static (Compiled)</div>
-                  <div className="col xl-fs14 xl-fw600">CSS</div>
+                  <div className="col xl-fs14">
+                    {this.state.menuDescription}
+                  </div>
+                  <div className="col xl-fs14 xl-fw600">
+                    {this.state.menuType}
+                  </div>
                 </div>
               </div>
               <div className="xl-pl8 xl-ba-gray-100">
-                <Link className="xl-db xl-py8 xl-px16 ho-ba-green-300 ho-co-white ho-bo-green-300 xl-ba-white xl-co-black-500 xl-bo-gray-200 xl-bwb1" to="/learn/wrap">wrap</Link>
-                <Link className="xl-db xl-py8 xl-px16 ho-ba-green-300 ho-co-white ho-bo-green-300 xl-ba-white xl-co-black-500 xl-bo-gray-200 xl-bwb1" to="/learn/col">col</Link>
-                <Link className="xl-db xl-py8 xl-px16 ho-ba-green-300 ho-co-white ho-bo-green-300 xl-ba-white xl-co-black-500 xl-bo-gray-200 xl-bwb1" to="/learn/col-row">col-row</Link>
-                <Link className="xl-db xl-py8 xl-px16 ho-ba-green-300 ho-co-white ho-bo-green-300 xl-ba-white xl-co-black-500 xl-bo-gray-200 xl-bwb1" to="/learn/hidden">hidden</Link>
-                <Link className="xl-db xl-py8 xl-px16 ho-ba-green-300 ho-co-white ho-bo-green-300 xl-ba-white xl-co-black-500 xl-bo-gray-200 xl-bwb1" to="/learn/not-hidden">not-hidden</Link>
-                <Link className="xl-db xl-py8 xl-px16 ho-ba-green-300 ho-co-white ho-bo-green-300 xl-ba-white xl-co-black-500 xl-bo-gray-200 xl-bwb1" to="/learn/gutter">gutter</Link>
-                <Link className="xl-db xl-py8 xl-px16 ho-ba-green-300 ho-co-white ho-bo-green-300 xl-ba-white xl-co-black-500 xl-bo-gray-200 xl-bwb1" to="/learn/outside">outside</Link>
-                <Link className="xl-db xl-py8 xl-px16 ho-ba-green-300 ho-co-white ho-bo-green-300 xl-ba-white xl-co-black-500 xl-bo-gray-200 xl-bwb1" to="/learn/wrap-col">wrap-col</Link>
-                <Link className="xl-db xl-py8 xl-px16 ho-ba-green-300 ho-co-white ho-bo-green-300 xl-ba-white xl-co-black-500 xl-bo-gray-200 xl-bwb1" to="/learn/auto">auto</Link>
-                <Link className="xl-db xl-py8 xl-px16 ho-ba-green-300 ho-co-white ho-bo-green-300 xl-ba-white xl-co-black-500 xl-bo-gray-200 xl-bwb1" to="/learn/table">table</Link>
-                <Link className="xl-db xl-py8 xl-px16 ho-ba-green-300 ho-co-white ho-bo-green-300 xl-ba-white xl-co-black-500 xl-bo-gray-200 xl-bwb1" to="/learn/width">width</Link>
-                <Link className="xl-db xl-py8 xl-px16 ho-ba-green-300 ho-co-white ho-bo-green-300 xl-ba-white xl-co-black-500 xl-bo-gray-200 xl-bwb1" to="/learn/flexbox">flexbox</Link>
-                <Link className="xl-db xl-py8 xl-px16 ho-ba-green-300 ho-co-white ho-bo-green-300 xl-ba-white xl-co-black-500 xl-bo-gray-200 xl-bwb1" to="/learn/normal">normal</Link>
-                <Link className="xl-db xl-py8 xl-px16 ho-ba-green-300 ho-co-white ho-bo-green-300 xl-ba-white xl-co-black-500 xl-bo-gray-200 xl-bwb1" to="/learn/left">left</Link>
-                <Link className="xl-db xl-py8 xl-px16 ho-ba-green-300 ho-co-white ho-bo-green-300 xl-ba-white xl-co-black-500 xl-bo-gray-200 xl-bwb1" to="/learn/center">center</Link>
-                <Link className="xl-db xl-py8 xl-px16 ho-ba-green-300 ho-co-white ho-bo-green-300 xl-ba-white xl-co-black-500 xl-bo-gray-200 xl-bwb1" to="/learn/right">right</Link>
-                <Link className="xl-db xl-py8 xl-px16 ho-ba-green-300 ho-co-white ho-bo-green-300 xl-ba-white xl-co-black-500 xl-bo-gray-200 xl-bwb1" to="/learn/top">top</Link>
-                <Link className="xl-db xl-py8 xl-px16 ho-ba-green-300 ho-co-white ho-bo-green-300 xl-ba-white xl-co-black-500 xl-bo-gray-200 xl-bwb1" to="/learn/middle">middle</Link>
-                <Link className="xl-db xl-py8 xl-px16 ho-ba-green-300 ho-co-white ho-bo-green-300 xl-ba-white xl-co-black-500 xl-bo-gray-200 xl-bwb1" to="/learn/bottom">bottom</Link>
-                <Link className="xl-db xl-py8 xl-px16 ho-ba-green-300 ho-co-white ho-bo-green-300 xl-ba-white xl-co-black-500 xl-bo-gray-200 xl-bwb1" to="/learn/between">between</Link>
-                <Link className="xl-db xl-py8 xl-px16 ho-ba-green-300 ho-co-white ho-bo-green-300 xl-ba-white xl-co-black-500 xl-bo-gray-200 xl-bwb1" to="/learn/around">around</Link>
-                <Link className="xl-db xl-py8 xl-px16 ho-ba-green-300 ho-co-white ho-bo-green-300 xl-ba-white xl-co-black-500 xl-bo-gray-200 xl-bwb1" to="/learn/baseline">baseline</Link>
-                <Link className="xl-db xl-py8 xl-px16 ho-ba-green-300 ho-co-white ho-bo-green-300 xl-ba-white xl-co-black-500 xl-bo-gray-200 xl-bwb1" to="/learn/first">first</Link>
-                <Link className="xl-db xl-py8 xl-px16 ho-ba-green-300 ho-co-white ho-bo-green-300 xl-ba-white xl-co-black-500 xl-bo-gray-200 xl-bwb1" to="/learn/not-first">not-first</Link>
-                <Link className="xl-db xl-py8 xl-px16 ho-ba-green-300 ho-co-white ho-bo-green-300 xl-ba-white xl-co-black-500 xl-bo-gray-200 xl-bwb1" to="/learn/last">last</Link>
-                <Link className="xl-db xl-py8 xl-px16 ho-ba-green-300 ho-co-white ho-bo-green-300 xl-ba-white xl-co-black-500 xl-bo-gray-200 xl-bwb1" to="/learn/not-last">not-last</Link>
-                <Link className="xl-db xl-py8 xl-px16 ho-ba-green-300 ho-co-white ho-bo-green-300 xl-ba-white xl-co-black-500 xl-bo-gray-200 xl-bwb1" to="/learn/reverse">reverse</Link>
-                <Link className="xl-db xl-py8 xl-px16 ho-ba-green-300 ho-co-white ho-bo-green-300 xl-ba-white xl-co-black-500 xl-bo-gray-200 xl-bwb1" to="/learn/not-reverse">not-reverse</Link>
-                <Link className="xl-db xl-py8 xl-px16 ho-ba-green-300 ho-co-white ho-bo-green-300 xl-ba-white xl-co-black-500 xl-bo-gray-200 xl-bwb1" to="/learn/masonry">masonry</Link>
-                <Link className="xl-db xl-py8 xl-px16 ho-ba-green-300 ho-co-white ho-bo-green-300 xl-ba-white xl-co-black-500 xl-bo-white xl-bwb1" to="/learn/breakpoint">breakpoint</Link>
+                <Link
+                  to="/learn/wrap"
+                  className="xl-db xl-py8 xl-px16 ho-ba-green-300 ho-co-white ho-bo-green-300 xl-ba-white xl-co-black-500 xl-bo-gray-200 xl-bwb1">
+                  wrap
+                </Link>
+                <Link
+                  to="/learn/col"
+                  className="xl-db xl-py8 xl-px16 ho-ba-green-300 ho-co-white ho-bo-green-300 xl-ba-white xl-co-black-500 xl-bo-gray-200 xl-bwb1">
+                  col
+                </Link>
+                <Link
+                  to="/learn/col-row"
+                  className="xl-db xl-py8 xl-px16 ho-ba-green-300 ho-co-white ho-bo-green-300 xl-ba-white xl-co-black-500 xl-bo-gray-200 xl-bwb1">
+                  col-row
+                </Link>
+                <Link
+                  to="/learn/hidden"
+                  className="xl-db xl-py8 xl-px16 ho-ba-green-300 ho-co-white ho-bo-green-300 xl-ba-white xl-co-black-500 xl-bo-gray-200 xl-bwb1">
+                  hidden
+                </Link>
+                <Link
+                  to="/learn/not-hidden"
+                  className="xl-db xl-py8 xl-px16 ho-ba-green-300 ho-co-white ho-bo-green-300 xl-ba-white xl-co-black-500 xl-bo-gray-200 xl-bwb1">
+                  not-hidden
+                </Link>
+                <Link
+                  to="/learn/gutter"
+                  className="xl-db xl-py8 xl-px16 ho-ba-green-300 ho-co-white ho-bo-green-300 xl-ba-white xl-co-black-500 xl-bo-gray-200 xl-bwb1">
+                  gutter
+                </Link>
+                <Link
+                  to="/learn/outside"
+                  className="xl-db xl-py8 xl-px16 ho-ba-green-300 ho-co-white ho-bo-green-300 xl-ba-white xl-co-black-500 xl-bo-gray-200 xl-bwb1">
+                  outside
+                </Link>
+                <Link
+                  to="/learn/wrap-col"
+                  className="xl-db xl-py8 xl-px16 ho-ba-green-300 ho-co-white ho-bo-green-300 xl-ba-white xl-co-black-500 xl-bo-gray-200 xl-bwb1">
+                  wrap-col
+                </Link>
+                <Link
+                  to="/learn/auto"
+                  className="xl-db xl-py8 xl-px16 ho-ba-green-300 ho-co-white ho-bo-green-300 xl-ba-white xl-co-black-500 xl-bo-gray-200 xl-bwb1">
+                  auto
+                </Link>
+                <Link
+                  to="/learn/table"
+                  className="xl-db xl-py8 xl-px16 ho-ba-green-300 ho-co-white ho-bo-green-300 xl-ba-white xl-co-black-500 xl-bo-gray-200 xl-bwb1">
+                  table
+                </Link>
+                <Link
+                  to="/learn/width"
+                  className="xl-db xl-py8 xl-px16 ho-ba-green-300 ho-co-white ho-bo-green-300 xl-ba-white xl-co-black-500 xl-bo-gray-200 xl-bwb1">
+                  width
+                </Link>
+                <Link
+                  to="/learn/flexbox"
+                  className="xl-db xl-py8 xl-px16 ho-ba-green-300 ho-co-white ho-bo-green-300 xl-ba-white xl-co-black-500 xl-bo-gray-200 xl-bwb1">
+                  flexbox
+                </Link>
+                <Link
+                  to="/learn/normal"
+                  className="xl-db xl-py8 xl-px16 ho-ba-green-300 ho-co-white ho-bo-green-300 xl-ba-white xl-co-black-500 xl-bo-gray-200 xl-bwb1">
+                  normal
+                </Link>
+                <Link
+                  to="/learn/left"
+                  className="xl-db xl-py8 xl-px16 ho-ba-green-300 ho-co-white ho-bo-green-300 xl-ba-white xl-co-black-500 xl-bo-gray-200 xl-bwb1">
+                  left
+                </Link>
+                <Link
+                  to="/learn/center"
+                  className="xl-db xl-py8 xl-px16 ho-ba-green-300 ho-co-white ho-bo-green-300 xl-ba-white xl-co-black-500 xl-bo-gray-200 xl-bwb1">
+                  center
+                </Link>
+                <Link
+                  to="/learn/right"
+                  className="xl-db xl-py8 xl-px16 ho-ba-green-300 ho-co-white ho-bo-green-300 xl-ba-white xl-co-black-500 xl-bo-gray-200 xl-bwb1">
+                  right
+                </Link>
+                <Link
+                  to="/learn/top"
+                  className="xl-db xl-py8 xl-px16 ho-ba-green-300 ho-co-white ho-bo-green-300 xl-ba-white xl-co-black-500 xl-bo-gray-200 xl-bwb1">
+                  top
+                </Link>
+                <Link
+                  to="/learn/middle"
+                  className="xl-db xl-py8 xl-px16 ho-ba-green-300 ho-co-white ho-bo-green-300 xl-ba-white xl-co-black-500 xl-bo-gray-200 xl-bwb1">
+                  middle
+                </Link>
+                <Link
+                  to="/learn/bottom"
+                  className="xl-db xl-py8 xl-px16 ho-ba-green-300 ho-co-white ho-bo-green-300 xl-ba-white xl-co-black-500 xl-bo-gray-200 xl-bwb1">
+                  bottom
+                </Link>
+                <Link
+                  to="/learn/between"
+                  className="xl-db xl-py8 xl-px16 ho-ba-green-300 ho-co-white ho-bo-green-300 xl-ba-white xl-co-black-500 xl-bo-gray-200 xl-bwb1">
+                  between
+                </Link>
+                <Link
+                  to="/learn/around"
+                  className="xl-db xl-py8 xl-px16 ho-ba-green-300 ho-co-white ho-bo-green-300 xl-ba-white xl-co-black-500 xl-bo-gray-200 xl-bwb1">
+                  around
+                </Link>
+                <Link
+                  to="/learn/baseline"
+                  className="xl-db xl-py8 xl-px16 ho-ba-green-300 ho-co-white ho-bo-green-300 xl-ba-white xl-co-black-500 xl-bo-gray-200 xl-bwb1">
+                  baseline
+                </Link>
+                <Link
+                  to="/learn/first"
+                  className="xl-db xl-py8 xl-px16 ho-ba-green-300 ho-co-white ho-bo-green-300 xl-ba-white xl-co-black-500 xl-bo-gray-200 xl-bwb1">
+                  first
+                </Link>
+                <Link
+                  to="/learn/not-first"
+                  className="xl-db xl-py8 xl-px16 ho-ba-green-300 ho-co-white ho-bo-green-300 xl-ba-white xl-co-black-500 xl-bo-gray-200 xl-bwb1">
+                  not-first
+                </Link>
+                <Link
+                  to="/learn/last"
+                  className="xl-db xl-py8 xl-px16 ho-ba-green-300 ho-co-white ho-bo-green-300 xl-ba-white xl-co-black-500 xl-bo-gray-200 xl-bwb1">
+                  last
+                </Link>
+                <Link
+                  to="/learn/not-last"
+                  className="xl-db xl-py8 xl-px16 ho-ba-green-300 ho-co-white ho-bo-green-300 xl-ba-white xl-co-black-500 xl-bo-gray-200 xl-bwb1">
+                  not-last
+                </Link>
+                <Link
+                  to="/learn/reverse"
+                  className="xl-db xl-py8 xl-px16 ho-ba-green-300 ho-co-white ho-bo-green-300 xl-ba-white xl-co-black-500 xl-bo-gray-200 xl-bwb1">
+                  reverse
+                </Link>
+                <Link
+                  to="/learn/not-reverse"
+                  className="xl-db xl-py8 xl-px16 ho-ba-green-300 ho-co-white ho-bo-green-300 xl-ba-white xl-co-black-500 xl-bo-gray-200 xl-bwb1">
+                  not-reverse
+                </Link>
+                <Link
+                  to="/learn/masonry"
+                  className="xl-db xl-py8 xl-px16 ho-ba-green-300 ho-co-white ho-bo-green-300 xl-ba-white xl-co-black-500 xl-bo-gray-200 xl-bwb1">
+                  masonry
+                </Link>
+                <Link
+                  to="/learn/breakpoint"
+                  className="xl-db xl-py8 xl-px16 ho-ba-green-300 ho-co-white ho-bo-green-300 xl-ba-white xl-co-black-500 xl-bo-white xl-bwb1">
+                  breakpoint
+                </Link>
               </div>
             </div>
           </div>
