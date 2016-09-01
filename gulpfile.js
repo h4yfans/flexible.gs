@@ -39,28 +39,28 @@ gulp.task('browser-sync', function() {
 gulp.task('scss',function() {
   gulp.src('scss/app.scss')
     .pipe(sass({outputStyle: 'expanded'}).on('error', handleErrors))
-    // .pipe(rename('bundle.css'))
+    .pipe(rename('bundle.css'))
     // start minify
     .pipe(sass({outputStyle: 'compressed'}).on('error', handleErrors))
-    .pipe(rename('bundle.css'))
+    .pipe(rename('bundle.min.css'))
     // end minify
     .pipe(gulp.dest('css'))
     .pipe(reload({stream:true}))
 });
 
 gulp.task('iconfont', function() {
-  gulp.src(['icons/*.svg'])
+  gulp.src(['icon/*.svg'])
     .pipe(iconfontcss({
       path: 'scss',
-      fontName: 'app-icons',
-      targetPath: '../scss/base/icons.scss',
-      fontPath: '../fonts/'
+      fontName: 'icon',
+      targetPath: '../scss/generated/icon.scss',
+      fontPath: '../font/'
     }))
     .pipe(iconfont({
-      fontName: 'app-icons',
+      fontName: 'icon',
       normalize: true
      }))
-    .pipe(gulp.dest('fonts'));
+    .pipe(gulp.dest('font'));
 });
 
 function buildScript(file, watch) {
@@ -77,9 +77,9 @@ function buildScript(file, watch) {
       .pipe(source(file))
       .pipe(rename('bundle.js'))
       // start minify
-      // .pipe(buffer())
-      // .pipe(uglify())
-      // .pipe(rename('bundle.js'))
+      .pipe(buffer())
+      .pipe(uglify())
+      .pipe(rename('bundle.min.js'))
       // end minify
       .pipe(gulp.dest('js'))
       .pipe(reload({stream:true}))
