@@ -19,7 +19,8 @@ var LearnContent = React.createClass({
           */}</pre>
         </div>
         <div className="xl-fw600 xl-fs18 xl-mt8">
-          {this.props.common.compiledView}
+          <em className="icon-rocket icon-sm"/>
+          <span className="xl-di xl-vam xl-pl8">{this.props.common.compiledView}</span>
         </div>
         <div dangerouslySetInnerHTML={{__html:this.props.content.line002}}></div>
         <div dangerouslySetInnerHTML={{__html:this.props.content.line003}}></div>

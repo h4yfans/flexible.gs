@@ -15,7 +15,7 @@ var HomepageContent = React.createClass({
       <div>
         <div dangerouslySetInnerHTML={{__html:this.props.content.line001}}></div>
         <div dangerouslySetInnerHTML={{__html:this.props.content.line002}}></div>
-        <div className="wrap xl-gutter-24 lg-gutter-8 xl-center xl-middle xl-auto xl-mt8 xl-lh0">
+        <div className="wrap xl-gutter-24 lg-gutter-8 xl-center xl-middle xl-auto xl-mt8 xl-lh0 xl-py40">
           <div className="col xl-my8">
             <div
               className="device device--macbook xl-dib xl-br8 xl-px24 xl-py16 xl-co-black-500"

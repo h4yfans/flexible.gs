@@ -12,6 +12,13 @@ var Header = React.createClass({
   },
 
   render: function() {
+
+    var linkClass = "xl-vam xl-dib xl-p8 xl-fs16 xl-fw400 xl-co-gray-500";
+    var linkClassActive = "xl-vam xl-dib xl-p8 xl-fs16 xl-fw400 xl-co-white ho-co-white";
+
+    var pathArray = window.location.pathname.split( '/' );
+    var path = pathArray[1];
+
     return (
       <div className="xl-tal xl-py8 xl-px24 xl-ba-black-500 xl-co-white">
         <div className="xl-maw1280 xl-ma">
@@ -25,33 +32,38 @@ var Header = React.createClass({
                 </div>
                 <div className="col md-my8">
                   <Link
+                    to="/"
+                    className={path == "" ? linkClassActive : linkClass}>
+                    {this.props.content.homepage}
+                  </Link>
+                  <Link
                     to="/install"
-                    className="xl-vam xl-dib xl-p8 xl-fs14 xl-fw400 xl-co-gray-500 ho-co-white">
+                    className={path == "install" ? linkClassActive : linkClass}>
                     {this.props.content.install}
                   </Link>
                   <Link
                     to="/learn"
-                    className="xl-vam xl-dib xl-p8 xl-fs14 xl-fw400 xl-co-gray-500 ho-co-white">
+                    className={path == "learn" ? linkClassActive : linkClass}>
                     {this.props.content.learn}
                   </Link>
                   <Link
                     to="/compatibility"
-                    className="xl-vam xl-dib xl-p8 xl-fs14 xl-fw400 xl-co-gray-500 ho-co-white">
+                    className={path == "compatibility" ? linkClassActive : linkClass}>
                     {this.props.content.compatibility}
                   </Link>
                   {/*<Link
                     to="/responsive-test"
-                    className="xl-vam xl-dib xl-p8 xl-fs14 xl-fw400 xl-co-gray-500 ho-co-white">
+                    className={path == "responsive-test" ? linkClassActive : linkClass}>
                     {this.props.content.responsiveTest}
                   </Link>*/}
                   <Link
                     to="/motivation"
-                    className="xl-vam xl-dib xl-p8 xl-fs14 xl-fw400 xl-co-gray-500 ho-co-white">
+                    className={path == "motivation" ? linkClassActive : linkClass}>
                     {this.props.content.motivation}
                   </Link>
                   <Link
                     to="/future"
-                    className="xl-vam xl-dib xl-p8 xl-fs14 xl-fw400 xl-co-gray-500 ho-co-white">
+                    className={path == "future" ? linkClassActive : linkClass}>
                     {this.props.content.future}
                   </Link>
                 </div>

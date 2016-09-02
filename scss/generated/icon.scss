@@ -48,11 +48,14 @@
 	@if $filename == long-arrow-right {
 		$char: "\E007";
 	}
-	@if $filename == twitter {
+	@if $filename == rocket {
 		$char: "\E008";
 	}
-	@if $filename == youtube-play {
+	@if $filename == twitter {
 		$char: "\E009";
+	}
+	@if $filename == youtube-play {
+		$char: "\E00A";
 	}
 
 	@return $char;
@@ -89,6 +92,9 @@
 }
 .icon-long-arrow-right {
 	@include icon(long-arrow-right);
+}
+.icon-rocket {
+	@include icon(rocket);
 }
 .icon-twitter {
 	@include icon(twitter);

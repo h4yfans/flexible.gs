@@ -11,6 +11,7 @@
       "future": "Future"
     },
     "common": {
+      "quickStart": "Quick Start",
       "dynamicCore": "Dynamic (Core)",
       "dynamicCompilationTool": "Dynamic (Compilation Tool)",
       "staticCompiled": "Static (Compiled)",
@@ -78,6 +79,7 @@
       "future": "Gelecek"
     },
     "common": {
+      "quickStart": "Hızlı Başlangıç",
       "dynamicCore": "Dinamik (Çekirdek)",
       "dynamicCompilationTool": "Dinamik (Derleme Aracı)",
       "staticCompiled": "Statik (Derlenmiş)",
