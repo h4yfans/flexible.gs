@@ -5,7 +5,6 @@ import React from 'react';
 import Header from '../partial/Header.react'
 import Sidebar from '../partial/Sidebar.react'
 import Footer from '../partial/Footer.react'
-
 import Title from '../partial/Title.react'
 import HomepageContent from '../content/HomepageContent.react'
 import InstallContent from '../content/InstallContent.react'
@@ -17,11 +16,40 @@ import InstallScssPlusContent from '../content/InstallScssPlusContent.react'
 import InstallCSSContent from '../content/InstallCSSContent.react'
 import InstallBEMContent from '../content/InstallBEMContent.react'
 import LearnContent from '../content/LearnContent.react'
+import LearnWrapContent from '../content/LearnWrapContent.react'
+import LearnColContent from '../content/LearnColContent.react'
+import LearnColRowContent from '../content/LearnColRowContent.react'
+import LearnHiddenContent from '../content/LearnHiddenContent.react'
+import LearnNotHiddenContent from '../content/LearnNotHiddenContent.react'
+import LearnGutterContent from '../content/LearnGutterContent.react'
+import LearnOutsideContent from '../content/LearnOutsideContent.react'
+import LearnWrapColContent from '../content/LearnWrapColContent.react'
+import LearnAutoContent from '../content/LearnAutoContent.react'
+import LearnTableContent from '../content/LearnTableContent.react'
+import LearnWidthContent from '../content/LearnWidthContent.react'
+import LearnFlexboxContent from '../content/LearnFlexboxContent.react'
+import LearnNormalContent from '../content/LearnNormalContent.react'
+import LearnLeftContent from '../content/LearnLeftContent.react'
+import LearnCenterContent from '../content/LearnCenterContent.react'
+import LearnRightContent from '../content/LearnRightContent.react'
+import LearnTopContent from '../content/LearnTopContent.react'
+import LearnMiddleContent from '../content/LearnMiddleContent.react'
+import LearnBottomContent from '../content/LearnBottomContent.react'
+import LearnBetweenContent from '../content/LearnBetweenContent.react'
+import LearnAroundContent from '../content/LearnAroundContent.react'
+import LearnBaselineContent from '../content/LearnBaselineContent.react'
+import LearnFirstContent from '../content/LearnFirstContent.react'
+import LearnNotFirstContent from '../content/LearnNotFirstContent.react'
+import LearnLastContent from '../content/LearnLastContent.react'
+import LearnNotLastContent from '../content/LearnNotLastContent.react'
+import LearnReverseContent from '../content/LearnReverseContent.react'
+import LearnNotReverseContent from '../content/LearnNotReverseContent.react'
+import LearnMasonryContent from '../content/LearnMasonryContent.react'
+import LearnBreakpointContent from '../content/LearnBreakpointContent.react'
 import CompatibilityContent from '../content/CompatibilityContent.react'
 import MotivationContent from '../content/MotivationContent.react'
 import FutureContent from '../content/FutureContent.react'
 import PageNotFoundContent from '../content/PageNotFoundContent.react'
-
 import LanguageStore from '../../store/LanguageStore'
 
 var Layout = React.createClass({
@@ -54,6 +82,10 @@ var Layout = React.createClass({
 
   installTitle: function(title) {
     return title + " " + this.state.content.header.install;
+  },
+
+  learnTitle: function(title) {
+    return title + " " + this.state.content.header.learn;
   },
 
   render: function() {
@@ -148,6 +180,256 @@ var Layout = React.createClass({
                       </div>
                     </div>
                   }
+
+
+
+                  {this.props.page == "learn" && this.props.type == "wrap" &&
+                    <div>
+                      <Title title={this.learnTitle("wrap")} />
+                      <div className={contentClass}>
+                        <LearnWrapContent />
+                      </div>
+                    </div>
+                  }
+                  {this.props.page == "learn" && this.props.type == "col" &&
+                    <div>
+                      <Title title={this.learnTitle("col")} />
+                      <div className={contentClass}>
+                        <LearnColContent />
+                      </div>
+                    </div>
+                  }
+                  {this.props.page == "learn" && this.props.type == "col-row" &&
+                    <div>
+                      <Title title={this.learnTitle("col(@col,@row)")} />
+                      <div className={contentClass}>
+                        <LearnColRowContent />
+                      </div>
+                    </div>
+                  }
+                  {this.props.page == "learn" && this.props.type == "hidden" &&
+                    <div>
+                      <Title title={this.learnTitle("col(hidden)")} />
+                      <div className={contentClass}>
+                        <LearnHiddenContent />
+                      </div>
+                    </div>
+                  }
+                  {this.props.page == "learn" && this.props.type == "not-hidden" &&
+                    <div>
+                      <Title title={this.learnTitle("col(not-hidden)")} />
+                      <div className={contentClass}>
+                        <LearnNotHiddenContent />
+                      </div>
+                    </div>
+                  }
+                  {this.props.page == "learn" && this.props.type == "gutter" &&
+                    <div>
+                      <Title title={this.learnTitle("wrap(gutter,@width)")} />
+                      <div className={contentClass}>
+                        <LearnGutterContent />
+                      </div>
+                    </div>
+                  }
+                  {this.props.page == "learn" && this.props.type == "outside" &&
+                    <div>
+                      <Title title={this.learnTitle("wrap(outside,@width)")} />
+                      <div className={contentClass}>
+                        <LearnOutsideContent />
+                      </div>
+                    </div>
+                  }
+                  {this.props.page == "learn" && this.props.type == "wrap-col" &&
+                    <div>
+                      <Title title={this.learnTitle("wrap(@col)")} />
+                      <div className={contentClass}>
+                        <LearnWrapColContent />
+                      </div>
+                    </div>
+                  }
+                  {this.props.page == "learn" && this.props.type == "auto" &&
+                    <div>
+                      <Title title={this.learnTitle("wrap(auto)")} />
+                      <div className={contentClass}>
+                        <LearnAutoContent />
+                      </div>
+                    </div>
+                  }
+                  {this.props.page == "learn" && this.props.type == "table" &&
+                    <div>
+                      <Title title={this.learnTitle("wrap(table)")} />
+                      <div className={contentClass}>
+                        <LearnTableContent />
+                      </div>
+                    </div>
+                  }
+                  {this.props.page == "learn" && this.props.type == "width" &&
+                    <div>
+                      <Title title={this.learnTitle("col(@width)")} />
+                      <div className={contentClass}>
+                        <LearnWidthContent />
+                      </div>
+                    </div>
+                  }
+                  {this.props.page == "learn" && this.props.type == "flexbox" &&
+                    <div>
+                      <Title title={this.learnTitle("wrap(flexbox)")} />
+                      <div className={contentClass}>
+                        <LearnFlexboxContent />
+                      </div>
+                    </div>
+                  }
+                  {this.props.page == "learn" && this.props.type == "normal" &&
+                    <div>
+                      <Title title={this.learnTitle("wrap(normal)")} />
+                      <div className={contentClass}>
+                        <LearnNormalContent />
+                      </div>
+                    </div>
+                  }
+                  {this.props.page == "learn" && this.props.type == "left" &&
+                    <div>
+                      <Title title={this.learnTitle("wrap(left)")} />
+                      <div className={contentClass}>
+                        <LearnLeftContent />
+                      </div>
+                    </div>
+                  }
+                  {this.props.page == "learn" && this.props.type == "center" &&
+                    <div>
+                      <Title title={this.learnTitle("wrap(center)")} />
+                      <div className={contentClass}>
+                        <LearnCenterContent />
+                      </div>
+                    </div>
+                  }
+                  {this.props.page == "learn" && this.props.type == "right" &&
+                    <div>
+                      <Title title={this.learnTitle("wrap(right)")} />
+                      <div className={contentClass}>
+                        <LearnRightContent />
+                      </div>
+                    </div>
+                  }
+                  {this.props.page == "learn" && this.props.type == "top" &&
+                    <div>
+                      <Title title={this.learnTitle("wrap(top)")} />
+                      <div className={contentClass}>
+                        <LearnTopContent />
+                      </div>
+                    </div>
+                  }
+                  {this.props.page == "learn" && this.props.type == "middle" &&
+                    <div>
+                      <Title title={this.learnTitle("wrap(middle)")} />
+                      <div className={contentClass}>
+                        <LearnMiddleContent />
+                      </div>
+                    </div>
+                  }
+                  {this.props.page == "learn" && this.props.type == "bottom" &&
+                    <div>
+                      <Title title={this.learnTitle("wrap(bottom)")} />
+                      <div className={contentClass}>
+                        <LearnBottomContent />
+                      </div>
+                    </div>
+                  }
+                  {this.props.page == "learn" && this.props.type == "between" &&
+                    <div>
+                      <Title title={this.learnTitle("wrap(between)")} />
+                      <div className={contentClass}>
+                        <LearnBetweenContent />
+                      </div>
+                    </div>
+                  }
+                  {this.props.page == "learn" && this.props.type == "around" &&
+                    <div>
+                      <Title title={this.learnTitle("wrap(around)")} />
+                      <div className={contentClass}>
+                        <LearnAroundContent />
+                      </div>
+                    </div>
+                  }
+                  {this.props.page == "learn" && this.props.type == "baseline" &&
+                    <div>
+                      <Title title={this.learnTitle("wrap(baseline)")} />
+                      <div className={contentClass}>
+                        <LearnBaselineContent />
+                      </div>
+                    </div>
+                  }
+                  {this.props.page == "learn" && this.props.type == "first" &&
+                    <div>
+                      <Title title={this.learnTitle("col(first)")} />
+                      <div className={contentClass}>
+                        <LearnFirstContent />
+                      </div>
+                    </div>
+                  }
+                  {this.props.page == "learn" && this.props.type == "not-first" &&
+                    <div>
+                      <Title title={this.learnTitle("col(not-first)")} />
+                      <div className={contentClass}>
+                        <LearnNotFirstContent />
+                      </div>
+                    </div>
+                  }
+                  {this.props.page == "learn" && this.props.type == "last" &&
+                    <div>
+                      <Title title={this.learnTitle("col(last)")} />
+                      <div className={contentClass}>
+                        <LearnLastContent />
+                      </div>
+                    </div>
+                  }
+                  {this.props.page == "learn" && this.props.type == "not-last" &&
+                    <div>
+                      <Title title={this.learnTitle("col(not-last)")} />
+                      <div className={contentClass}>
+                        <LearnNotLastContent />
+                      </div>
+                    </div>
+                  }
+                  {this.props.page == "learn" && this.props.type == "reverse" &&
+                    <div>
+                      <Title title={this.learnTitle("wrap(reverse)")} />
+                      <div className={contentClass}>
+                        <LearnReverseContent />
+                      </div>
+                    </div>
+                  }
+                  {this.props.page == "learn" && this.props.type == "not-reverse" &&
+                    <div>
+                      <Title title={this.learnTitle("wrap(not-reverse)")} />
+                      <div className={contentClass}>
+                        <LearnNotReverseContent />
+                      </div>
+                    </div>
+                  }
+                  {this.props.page == "learn" && this.props.type == "masonry" &&
+                    <div>
+                      <Title title={this.learnTitle("wrap(masonry,@col)")} />
+                      <div className={contentClass}>
+                        <LearnMasonryContent />
+                      </div>
+                    </div>
+                  }
+                  {this.props.page == "learn" && this.props.type == "breakpoint" &&
+                    <div>
+                      <Title title={this.learnTitle("breakpoint")} />
+                      <div className={contentClass}>
+                        <LearnBreakpointContent />
+                      </div>
+                    </div>
+                  }
+
+
+
+
+
+
+
                   {this.props.page == "compatibility" &&
                     <div>
                       <Title title={this.state.content.header.compatibility} />

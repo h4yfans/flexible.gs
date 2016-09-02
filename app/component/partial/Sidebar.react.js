@@ -181,137 +181,137 @@ var Sidebar = React.createClass({
                 <Link
                   to={linkColRow}
                   className="xl-db xl-py8 xl-px16 ho-ba-green-300 ho-co-white ho-bo-green-300 xl-ba-white xl-co-black-500 xl-bo-gray-200 xl-bwb1">
-                  col-row
+                  col(@col,@row)
                 </Link>
                 <Link
                   to={linkHidden}
                   className="xl-db xl-py8 xl-px16 ho-ba-green-300 ho-co-white ho-bo-green-300 xl-ba-white xl-co-black-500 xl-bo-gray-200 xl-bwb1">
-                  hidden
+                  col(hidden)
                 </Link>
                 <Link
                   to={linkNotHidden}
                   className="xl-db xl-py8 xl-px16 ho-ba-green-300 ho-co-white ho-bo-green-300 xl-ba-white xl-co-black-500 xl-bo-gray-200 xl-bwb1">
-                  not-hidden
+                  col(not-hidden)
                 </Link>
                 <Link
                   to={linkGutter}
                   className="xl-db xl-py8 xl-px16 ho-ba-green-300 ho-co-white ho-bo-green-300 xl-ba-white xl-co-black-500 xl-bo-gray-200 xl-bwb1">
-                  gutter
+                  wrap(gutter,@width)
                 </Link>
                 <Link
                   to={linkOutside}
                   className="xl-db xl-py8 xl-px16 ho-ba-green-300 ho-co-white ho-bo-green-300 xl-ba-white xl-co-black-500 xl-bo-gray-200 xl-bwb1">
-                  outside
+                  wrap(outside,@width)
                 </Link>
                 <Link
                   to={linkWrapCol}
                   className="xl-db xl-py8 xl-px16 ho-ba-green-300 ho-co-white ho-bo-green-300 xl-ba-white xl-co-black-500 xl-bo-gray-200 xl-bwb1">
-                  wrap-col
+                  wrap(@col)
                 </Link>
                 <Link
                   to={linkAuto}
                   className="xl-db xl-py8 xl-px16 ho-ba-green-300 ho-co-white ho-bo-green-300 xl-ba-white xl-co-black-500 xl-bo-gray-200 xl-bwb1">
-                  auto
+                  wrap(auto)
                 </Link>
                 <Link
                   to={linkTable}
                   className="xl-db xl-py8 xl-px16 ho-ba-green-300 ho-co-white ho-bo-green-300 xl-ba-white xl-co-black-500 xl-bo-gray-200 xl-bwb1">
-                  table
+                  wrap(table)
                 </Link>
                 <Link
                   to={linkWidth}
                   className="xl-db xl-py8 xl-px16 ho-ba-green-300 ho-co-white ho-bo-green-300 xl-ba-white xl-co-black-500 xl-bo-gray-200 xl-bwb1">
-                  width
+                  col(@width)
                 </Link>
                 <Link
                   to={linkFlexbox}
                   className="xl-db xl-py8 xl-px16 ho-ba-green-300 ho-co-white ho-bo-green-300 xl-ba-white xl-co-black-500 xl-bo-gray-200 xl-bwb1">
-                  flexbox
+                  wrap(flexbox)
                 </Link>
                 <Link
                   to={linkNormal}
                   className="xl-db xl-py8 xl-px16 ho-ba-green-300 ho-co-white ho-bo-green-300 xl-ba-white xl-co-black-500 xl-bo-gray-200 xl-bwb1">
-                  normal
+                  wrap(normal)
                 </Link>
                 <Link
                   to={linkLeft}
                   className="xl-db xl-py8 xl-px16 ho-ba-green-300 ho-co-white ho-bo-green-300 xl-ba-white xl-co-black-500 xl-bo-gray-200 xl-bwb1">
-                  left
+                  wrap(left)
                 </Link>
                 <Link
                   to={linkCenter}
                   className="xl-db xl-py8 xl-px16 ho-ba-green-300 ho-co-white ho-bo-green-300 xl-ba-white xl-co-black-500 xl-bo-gray-200 xl-bwb1">
-                  center
+                  wrap(center)
                 </Link>
                 <Link
                   to={linkRight}
                   className="xl-db xl-py8 xl-px16 ho-ba-green-300 ho-co-white ho-bo-green-300 xl-ba-white xl-co-black-500 xl-bo-gray-200 xl-bwb1">
-                  right
+                  wrap(right)
                 </Link>
                 <Link
                   to={linkTop}
                   className="xl-db xl-py8 xl-px16 ho-ba-green-300 ho-co-white ho-bo-green-300 xl-ba-white xl-co-black-500 xl-bo-gray-200 xl-bwb1">
-                  top
+                  wrap(top)
                 </Link>
                 <Link
                   to={linkMiddle}
                   className="xl-db xl-py8 xl-px16 ho-ba-green-300 ho-co-white ho-bo-green-300 xl-ba-white xl-co-black-500 xl-bo-gray-200 xl-bwb1">
-                  middle
+                  wrap(middle)
                 </Link>
                 <Link
                   to={linkBottom}
                   className="xl-db xl-py8 xl-px16 ho-ba-green-300 ho-co-white ho-bo-green-300 xl-ba-white xl-co-black-500 xl-bo-gray-200 xl-bwb1">
-                  bottom
+                  wrap(bottom)
                 </Link>
                 <Link
                   to={linkBetween}
                   className="xl-db xl-py8 xl-px16 ho-ba-green-300 ho-co-white ho-bo-green-300 xl-ba-white xl-co-black-500 xl-bo-gray-200 xl-bwb1">
-                  between
+                  wrap(between)
                 </Link>
                 <Link
                   to={linkAround}
                   className="xl-db xl-py8 xl-px16 ho-ba-green-300 ho-co-white ho-bo-green-300 xl-ba-white xl-co-black-500 xl-bo-gray-200 xl-bwb1">
-                  around
+                  wrap(around)
                 </Link>
                 <Link
                   to={linkBaseline}
                   className="xl-db xl-py8 xl-px16 ho-ba-green-300 ho-co-white ho-bo-green-300 xl-ba-white xl-co-black-500 xl-bo-gray-200 xl-bwb1">
-                  baseline
+                  wrap(baseline)
                 </Link>
                 <Link
                   to={linkFirst}
                   className="xl-db xl-py8 xl-px16 ho-ba-green-300 ho-co-white ho-bo-green-300 xl-ba-white xl-co-black-500 xl-bo-gray-200 xl-bwb1">
-                  first
+                  col(first)
                 </Link>
                 <Link
                   to={linkNotFirst}
                   className="xl-db xl-py8 xl-px16 ho-ba-green-300 ho-co-white ho-bo-green-300 xl-ba-white xl-co-black-500 xl-bo-gray-200 xl-bwb1">
-                  not-first
+                  col(not-first)
                 </Link>
                 <Link
                   to={linkLast}
                   className="xl-db xl-py8 xl-px16 ho-ba-green-300 ho-co-white ho-bo-green-300 xl-ba-white xl-co-black-500 xl-bo-gray-200 xl-bwb1">
-                  last
+                  col(last)
                 </Link>
                 <Link
                   to={linkNotLast}
                   className="xl-db xl-py8 xl-px16 ho-ba-green-300 ho-co-white ho-bo-green-300 xl-ba-white xl-co-black-500 xl-bo-gray-200 xl-bwb1">
-                  not-last
+                  col(not-last)
                 </Link>
                 <Link
                   to={linkReverse}
                   className="xl-db xl-py8 xl-px16 ho-ba-green-300 ho-co-white ho-bo-green-300 xl-ba-white xl-co-black-500 xl-bo-gray-200 xl-bwb1">
-                  reverse
+                  wrap(reverse)
                 </Link>
                 <Link
                   to={linkNotReverse}
                   className="xl-db xl-py8 xl-px16 ho-ba-green-300 ho-co-white ho-bo-green-300 xl-ba-white xl-co-black-500 xl-bo-gray-200 xl-bwb1">
-                  not-reverse
+                  wrap(not-reverse)
                 </Link>
                 <Link
                   to={linkMasonry}
                   className="xl-db xl-py8 xl-px16 ho-ba-green-300 ho-co-white ho-bo-green-300 xl-ba-white xl-co-black-500 xl-bo-gray-200 xl-bwb1">
-                  masonry
+                  wrap(masonry,@col)
                 </Link>
                 <Link
                   to={linkBreakpoint}
