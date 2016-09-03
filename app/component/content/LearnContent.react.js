@@ -81,15 +81,15 @@ var LearnContent = React.createClass({
               </div>
               <div>
                 <em className="icon-dot-circle-o icon-xs xl-co-gray-300"/>
-                <div className="xl-di xl-vam xl-pl8 xl-co-gray-500 xl-tdlt">Sass Plus</div>
+                <div className="xl-di xl-vam xl-pl8 xl-co-gray-500 xl-tdlt xl-cn">Sass Plus</div>
               </div>
               <div>
                 <em className="icon-dot-circle-o icon-xs xl-co-gray-300"/>
-                <div className="xl-di xl-vam xl-pl8 xl-co-gray-500 xl-tdlt">Less Plus</div>
+                <div className="xl-di xl-vam xl-pl8 xl-co-gray-500 xl-tdlt xl-cn">Less Plus</div>
               </div>
               <div>
                 <em className="icon-dot-circle-o icon-xs xl-co-gray-300"/>
-                <div className="xl-di xl-vam xl-pl8 xl-co-gray-500 xl-tdlt">Stylus Plus</div>
+                <div className="xl-di xl-vam xl-pl8 xl-co-gray-500 xl-tdlt xl-cn">Stylus Plus</div>
               </div>
             </div>
           </div>

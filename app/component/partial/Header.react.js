@@ -13,8 +13,8 @@ var Header = React.createClass({
 
   render: function() {
 
-    var linkClass = "xl-vam xl-dib xl-p8 xl-fs16 xl-fw400 xl-co-gray-500";
-    var linkClassActive = "xl-vam xl-dib xl-p8 xl-fs16 xl-fw400 xl-co-white ho-co-white";
+    var linkClass = "xl-vam xl-dib xl-p8 xl-fs16 xl-ffscp xl-co-gray-500";
+    var linkClassActive = "xl-vam xl-dib xl-p8 xl-fs16 xl-ffscp xl-fw600 xl-co-white ho-co-white";
 
     var pathArray = window.location.pathname.split( '/' );
     var path = pathArray[1];
@@ -31,11 +31,6 @@ var Header = React.createClass({
                     className="icon-flexiblegs xl-vam xl-dib xl-p8 xl-co-white ho-co-gray-500"/>
                 </div>
                 <div className="col md-my8">
-                  <Link
-                    to="/"
-                    className={path == "" ? linkClassActive : linkClass}>
-                    {this.props.content.homepage}
-                  </Link>
                   <Link
                     to="/install"
                     className={path == "install" ? linkClassActive : linkClass}>

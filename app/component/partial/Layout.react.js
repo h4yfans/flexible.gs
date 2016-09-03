@@ -81,11 +81,11 @@ var Layout = React.createClass({
   },
 
   installTitle: function(title) {
-    return title + " " + this.state.content.header.install;
+    return this.state.content.header.install + " (" + title + ")";
   },
 
   learnTitle: function(title) {
-    return title + " " + this.state.content.header.learn;
+    return title;
   },
 
   render: function() {
@@ -120,7 +120,7 @@ var Layout = React.createClass({
                     <div>
                       <Title title={this.installTitle("Scss")} />
                       <div className={contentClass}>
-                        <InstallScssContent />
+                        <InstallScssContent content={this.state.content.install} header={this.state.content.header} />
                       </div>
                     </div>
                   }
@@ -128,7 +128,7 @@ var Layout = React.createClass({
                     <div>
                       <Title title={this.installTitle("Sass")} />
                       <div className={contentClass}>
-                        <InstallSassContent />
+                        <InstallSassContent content={this.state.content.install} header={this.state.content.header} />
                       </div>
                     </div>
                   }
@@ -136,7 +136,7 @@ var Layout = React.createClass({
                     <div>
                       <Title title={this.installTitle("Less")} />
                       <div className={contentClass}>
-                        <InstallLessContent />
+                        <InstallLessContent content={this.state.content.install} header={this.state.content.header} />
                       </div>
                     </div>
                   }
@@ -144,7 +144,7 @@ var Layout = React.createClass({
                     <div>
                       <Title title={this.installTitle("Stylus")} />
                       <div className={contentClass}>
-                        <InstallStylusContent />
+                        <InstallStylusContent content={this.state.content.install} header={this.state.content.header} />
                       </div>
                     </div>
                   }
@@ -152,7 +152,7 @@ var Layout = React.createClass({
                     <div>
                       <Title title={this.installTitle("Scss Plus")} />
                       <div className={contentClass}>
-                        <InstallScssPlusContent />
+                        <InstallScssPlusContent content={this.state.content.install} />
                       </div>
                     </div>
                   }
@@ -160,7 +160,7 @@ var Layout = React.createClass({
                     <div>
                       <Title title={this.installTitle("CSS")} />
                       <div className={contentClass}>
-                        <InstallCSSContent />
+                        <InstallCSSContent content={this.state.content.install} header={this.state.content.header} />
                       </div>
                     </div>
                   }
@@ -168,7 +168,7 @@ var Layout = React.createClass({
                     <div>
                       <Title title={this.installTitle("BEM")} />
                       <div className={contentClass}>
-                        <InstallCSSContent />
+                        <InstallBEMContent content={this.state.content.install} header={this.state.content.header} />
                       </div>
                     </div>
                   }
@@ -180,9 +180,6 @@ var Layout = React.createClass({
                       </div>
                     </div>
                   }
-
-
-
                   {this.props.page == "learn" && this.props.type == "wrap" &&
                     <div>
                       <Title title={this.learnTitle("wrap")} />
@@ -423,13 +420,6 @@ var Layout = React.createClass({
                       </div>
                     </div>
                   }
-
-
-
-
-
-
-
                   {this.props.page == "compatibility" &&
                     <div>
                       <Title title={this.state.content.header.compatibility} />
