@@ -12,11 +12,14 @@ var LearnContent = React.createClass({
           {this.props.common.responsiveMeta}
         </div>
         <div className="xl-py8">
-          <pre>{/*
-            */}&lt;head&gt;<br/>{/*
-            */}&nbsp;&nbsp;&lt;meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"&gt;<br/>{/*
-            */}&lt;/head&gt;{/*
-          */}</pre>
+          <div className="code code--install">
+            <div className="code__type code__type--bottom">.html</div>
+            <div className="code__content">{/*
+              */}&lt;head&gt;<br/>{/*
+              */}&nbsp;&nbsp;&lt;meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"&gt;<br/>{/*
+              */}&lt;/head&gt;{/*
+            */}</div>
+          </div>
         </div>
         <div className="xl-fw600 xl-fs18 xl-mt8">
           <em className="icon-rocket icon-sm"/>

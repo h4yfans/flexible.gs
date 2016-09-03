@@ -60,7 +60,9 @@ var Sidebar = React.createClass({
           <div>
             <Link to="/learn/wrap?type=css" className="xl-1-1 xl-fs18 xl-fw600 xl-db xl-lh0 xl-co-white xl-ba-blue-300 xl-br8 xl-py16 xl-mb16 xl-tac">
               <em className="icon-rocket icon-sm xl-co-white"/>
-              <span className="xl-di xl-vam xl-pl8">{this.props.common.quickStart} (CSS)</span>
+              <span className="xl-di xl-vam xl-pl8">
+                {this.props.common.quickStart} (CSS)
+              </span>
             </Link>
             <a
               href="https://youtu.be/4306ejHx17Y"
