@@ -5,7 +5,16 @@ import React from 'react';
 var LearnWrapColContent = React.createClass({
   render: function() {
     return (
-      <div>wrap-col</div>
+      <div>
+
+        <div className="preview preview--last-child">
+          <div className="wrap xl-gutter-24 xl-3 preview__item--wrap">
+            <div className="col"><div className="preview__item--col">01</div></div>
+            <div className="col"><div className="preview__item--col">02</div></div>
+            <div className="col"><div className="preview__item--col">03</div></div>
+          </div>
+        </div>
+      </div>
     )
   }
 });

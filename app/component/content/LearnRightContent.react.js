@@ -5,7 +5,14 @@ import React from 'react';
 var LearnRightContent = React.createClass({
   render: function() {
     return (
-      <div>right</div>
+      <div>
+
+        <div className="preview preview--last-child">
+          <div className="wrap xl-right preview__item--wrap">
+            <div className="col xl-6-12"><div className="preview__item--col">01</div></div>
+          </div>
+        </div>
+      </div>
     )
   }
 });

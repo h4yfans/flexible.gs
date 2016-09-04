@@ -38,15 +38,47 @@
   overflow: auto;
 }
 
-.code__type {
+.code-item {
+  display: inline-block;
+}
+
+.code--install .code-item {
+  color: #222222;
+}
+
+.code--learn .code-item,
+.code--black .code-item {
+  background: #1094F6;
+  color: #FFFFFF;
+  padding: 0 8px;
+  height: 24px;
+  line-height: 24px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+}
+
+.code--black .code-item {
+  background: #323232;
+  color: #FFFFFF;
+}
+
+.code-comment {
+  color: #a1a1a1;
+}
+
+.tag {
   font-size: 14px;
   text-align: center;
   display: inline-block;
   position: absolute;
   right: 0;
+  z-index: 2;
+  font-family: 'Source Code Pro';
+  font-weight: 400;
 }
 
-.code__type--top {
+.tag--top {
   cursor: pointer;
   line-height: 0;
   padding: 8px 16px;
@@ -63,7 +95,7 @@
   border-bottom-left-radius: 8px;
 }
 
-.code__type--middle {
+.tag--middle {
   padding: 0 16px;
   height: 24px;
   line-height: 24px;
@@ -84,7 +116,7 @@
   border-bottom-right-radius: 0;
 }
 
-.code__type--bottom {
+.tag--bottom {
   padding: 0 16px;
   height: 24px;
   line-height: 24px;
@@ -99,39 +131,41 @@
   border-top-left-radius: 8px;
 }
 
-.code--black .code__type--top,
-.code--black .code__type--middle,
-.code--black .code__type--bottom {
+.code--black .tag--top,
+.code--black .tag--middle,
+.code--black .tag--bottom {
   background: #323232;
   color: #FFFFFF;
   border: #222222;
 }
 
-.code-type {
-  display: inline-block;
-}
-
-.code--install .code-type {
-  color: #222222;
-}
-
-.code--learn .code-type,
-.code--black .code-type {
-  background: #1094F6;
-  color: #FFFFFF;
-  padding: 0 8px;
-  height: 24px;
-  line-height: 24px;
+.preview {
+  position: relative;
+  overflow: hidden;
   -webkit-border-radius: 8px;
   -moz-border-radius: 8px;
   border-radius: 8px;
-}
-
-.code--black .code-type {
-  background: #323232;
-  color: #FFFFFF;
-}
-
-.code-comment {
-  color: #a1a1a1;
+  margin-bottom: 24px;
+  &--last-child {
+    margin-bottom: 8px;
+  }
+  &__item--wrap {
+    background: #FCA9B6;
+    min-height: 48px;
+    position: relative;
+  }
+  &__item--col {
+    font-family: 'Source Code Pro';
+    display: block;
+    color: rgba(255, 255, 255, 1);
+    background: #1094F6;
+    line-height: 48px;
+    min-height: 48px;
+    text-align: center;
+    font-weight: 400;
+    font-size: 24px;
+    span {
+      color: rgba(255, 255, 255, 0.2);
+    }
+  }
 }

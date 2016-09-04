@@ -19,9 +19,9 @@ var InstallSassContent = React.createClass({
           </div>
           <div className="xl-mt8 xl-mb24">
             <div className="code code--install">
-              <div className="code__type code__type--bottom">.sass</div>
+              <div className="tag tag--bottom">.sass</div>
               <div className="code__content">{/*
-                */}@import "<span className="code-type">flexiblegs-sass</span>"{/*
+                */}@import "<span className="code-item">flexiblegs-sass</span>"{/*
               */}</div>
             </div>
           </div>
@@ -37,9 +37,9 @@ var InstallSassContent = React.createClass({
           </div>
           <div className="xl-mt8 xl-mb24">
             <div className="code code--install">
-              <div className="code__type code__type--bottom">terminal</div>
+              <div className="tag tag--bottom">terminal</div>
               <div className="code__content">{/*
-                */}$ npm install --save <span className="code-type">flexiblegs-sass</span>{/*
+                */}$ npm install --save <span className="code-item">flexiblegs-sass</span>{/*
               */}</div>
             </div>
           </div>
@@ -55,9 +55,9 @@ var InstallSassContent = React.createClass({
           </div>
           <div className="xl-mt8 xl-mb24">
             <div className="code code--install">
-              <div className="code__type code__type--bottom">terminal</div>
+              <div className="tag tag--bottom">terminal</div>
               <div className="code__content">{/*
-                */}$ bower install --save <span className="code-type">flexiblegs-sass</span>{/*
+                */}$ bower install --save <span className="code-item">flexiblegs-sass</span>{/*
               */}</div>
             </div>
           </div>

@@ -19,9 +19,9 @@ var InstallLessContent = React.createClass({
           </div>
           <div className="xl-mt8 xl-mb24">
             <div className="code code--install">
-              <div className="code__type code__type--bottom">.less</div>
+              <div className="tag tag--bottom">.less</div>
               <div className="code__content">{/*
-                */}@import "<span className="code-type">flexiblegs-less.less</span>";{/*
+                */}@import "<span className="code-item">flexiblegs-less.less</span>";{/*
               */}</div>
             </div>
           </div>
@@ -37,9 +37,9 @@ var InstallLessContent = React.createClass({
           </div>
           <div className="xl-mt8 xl-mb24">
             <div className="code code--install">
-              <div className="code__type code__type--bottom">terminal</div>
+              <div className="tag tag--bottom">terminal</div>
               <div className="code__content">{/*
-                */}$ npm install --save <span className="code-type">flexiblegs-less</span>{/*
+                */}$ npm install --save <span className="code-item">flexiblegs-less</span>{/*
               */}</div>
             </div>
           </div>
@@ -55,9 +55,9 @@ var InstallLessContent = React.createClass({
           </div>
           <div className="xl-mt8 xl-mb24">
             <div className="code code--install">
-              <div className="code__type code__type--bottom">terminal</div>
+              <div className="tag tag--bottom">terminal</div>
               <div className="code__content">{/*
-                */}$ bower install --save <span className="code-type">flexiblegs-less</span>{/*
+                */}$ bower install --save <span className="code-item">flexiblegs-less</span>{/*
               */}</div>
             </div>
           </div>

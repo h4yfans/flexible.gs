@@ -19,9 +19,9 @@ var InstallStylusContent = React.createClass({
           </div>
           <div className="xl-mt8 xl-mb24">
             <div className="code code--install">
-              <div className="code__type code__type--bottom">.styl</div>
+              <div className="tag tag--bottom">.styl</div>
               <div className="code__content">{/*
-                */}@import '<span className="code-type">flexiblegs-stylus</span>'{/*
+                */}@import '<span className="code-item">flexiblegs-stylus</span>'{/*
               */}</div>
             </div>
           </div>
@@ -37,9 +37,9 @@ var InstallStylusContent = React.createClass({
           </div>
           <div className="xl-mt8 xl-mb24">
             <div className="code code--install">
-              <div className="code__type code__type--bottom">terminal</div>
+              <div className="tag tag--bottom">terminal</div>
               <div className="code__content">{/*
-                */}$ npm install --save <span className="code-type">flexiblegs-stylus</span>{/*
+                */}$ npm install --save <span className="code-item">flexiblegs-stylus</span>{/*
               */}</div>
             </div>
           </div>
@@ -55,9 +55,9 @@ var InstallStylusContent = React.createClass({
           </div>
           <div className="xl-mt8 xl-mb24">
             <div className="code code--install">
-              <div className="code__type code__type--bottom">terminal</div>
+              <div className="tag tag--bottom">terminal</div>
               <div className="code__content">{/*
-                */}$ bower install --save <span className="code-type">flexiblegs-stylus</span>{/*
+                */}$ bower install --save <span className="code-item">flexiblegs-stylus</span>{/*
               */}</div>
             </div>
           </div>

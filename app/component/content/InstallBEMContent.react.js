@@ -19,10 +19,10 @@ var InstallBEMContent = React.createClass({
           </div>
           <div className="xl-mt8 xl-mb24">
             <div className="code code--install">
-              <div className="code__type code__type--bottom">.html</div>
+              <div className="tag tag--bottom">.html</div>
               <div className="code__content">{/*
                 */}&lt;head&gt;<br/>{/*
-                */}&nbsp;&nbsp;&lt;link rel="stylesheet" href="<span className="code-type">flexiblegs-bem.css</span>"&gt;<br/>{/*
+                */}&nbsp;&nbsp;&lt;link rel="stylesheet" href="<span className="code-item">flexiblegs-bem.css</span>"&gt;<br/>{/*
                 */}&lt;/head&gt;{/*
               */}</div>
             </div>
@@ -39,9 +39,9 @@ var InstallBEMContent = React.createClass({
           </div>
           <div className="xl-mt8 xl-mb24">
             <div className="code code--install">
-              <div className="code__type code__type--bottom">terminal</div>
+              <div className="tag tag--bottom">terminal</div>
               <div className="code__content">{/*
-                */}$ npm install --save <span className="code-type">flexiblegs-bem</span>{/*
+                */}$ npm install --save <span className="code-item">flexiblegs-bem</span>{/*
               */}</div>
             </div>
           </div>
@@ -57,9 +57,9 @@ var InstallBEMContent = React.createClass({
           </div>
           <div className="xl-mt8 xl-mb24">
             <div className="code code--install">
-              <div className="code__type code__type--bottom">terminal</div>
+              <div className="tag tag--bottom">terminal</div>
               <div className="code__content">{/*
-                */}$ bower install --save <span className="code-type">flexiblegs-bem</span>{/*
+                */}$ bower install --save <span className="code-item">flexiblegs-bem</span>{/*
               */}</div>
             </div>
           </div>
