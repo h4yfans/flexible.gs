@@ -51,6 +51,7 @@ var Header = React.createClass({
                     className={path == "responsive-test" ? linkClassActive : linkClass}>
                     {this.props.content.responsiveTest}
                   </Link>*/}
+
                   <Link
                     to="/motivation"
                     className={path == "motivation" ? linkClassActive : linkClass}>
