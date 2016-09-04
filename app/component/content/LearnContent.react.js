@@ -11,7 +11,7 @@ var LearnContent = React.createClass({
         <div className="xl-fw600 xl-fs18 xl-mt8">
           {this.props.common.responsiveMeta}
         </div>
-        <div className="xl-py8">
+        <div className="xl-pt8">
           <div className="code code--install">
             <div className="tag tag--bottom">.html</div>
             <div className="code__content">{/*
@@ -21,7 +21,7 @@ var LearnContent = React.createClass({
             */}</div>
           </div>
         </div>
-        <div className="xl-fw600 xl-fs18 xl-mt8">
+        <div className="xl-fw600 xl-fs18">
           <em className="icon-rocket icon-sm"/>
           <span className="xl-di xl-vam xl-pl8">{this.props.common.compiledView}</span>
         </div>

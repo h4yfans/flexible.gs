@@ -58,7 +58,8 @@ gulp.task('iconfont', function() {
     }))
     .pipe(iconfont({
       fontName: 'icon',
-      normalize: true
+      normalize: true,
+      formats: ['ttf', 'eot', 'woff', 'woff2']
      }))
     .pipe(gulp.dest('font'));
 });

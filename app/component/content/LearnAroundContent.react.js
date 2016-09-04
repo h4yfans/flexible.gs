@@ -2,11 +2,13 @@
 
 import React from 'react';
 
+import Code from '../partial/Code.react'
+
 var LearnAroundContent = React.createClass({
   render: function() {
     return (
       <div>
-
+        <Code type={this.props.type} />
         <div className="preview preview--last-child">
           <div className="tag tag--middle">flexbox</div>
           <div className="wrap xl-flexbox xl-around xl-5 preview__item--wrap" style={{height: '256px'}}>

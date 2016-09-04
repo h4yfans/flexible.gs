@@ -2,10 +2,14 @@
 
 import React from 'react';
 
+import Code from '../partial/Code.react'
+
 var LearnWidthContent = React.createClass({
   render: function() {
     return (
-      <div>width</div>
+      <div>
+        <Code type={this.props.type} />
+      </div>
     )
   }
 });

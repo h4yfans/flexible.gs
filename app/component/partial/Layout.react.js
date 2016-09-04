@@ -184,7 +184,9 @@ var Layout = React.createClass({
                     <div>
                       <Title title={this.learnTitle("wrap")} />
                       <div className={contentClass}>
-                        <LearnWrapContent />
+                        <div className="xl-pt8">
+                          <LearnWrapContent type={this.props.type} />
+                        </div>
                       </div>
                     </div>
                   }
@@ -192,7 +194,9 @@ var Layout = React.createClass({
                     <div>
                       <Title title={this.learnTitle("col")} />
                       <div className={contentClass}>
-                        <LearnColContent />
+                        <div className="xl-pt8">
+                          <LearnColContent type={this.props.type} />
+                        </div>
                       </div>
                     </div>
                   }
@@ -200,7 +204,9 @@ var Layout = React.createClass({
                     <div>
                       <Title title={this.learnTitle("col(@col,@row)")} />
                       <div className={contentClass}>
-                        <LearnColRowContent />
+                        <div className="xl-pt8">
+                          <LearnColRowContent type={this.props.type} />
+                        </div>
                       </div>
                     </div>
                   }
@@ -208,7 +214,9 @@ var Layout = React.createClass({
                     <div>
                       <Title title={this.learnTitle("col(hidden)")} />
                       <div className={contentClass}>
-                        <LearnHiddenContent />
+                        <div className="xl-pt8">
+                          <LearnHiddenContent type={this.props.type} />
+                        </div>
                       </div>
                     </div>
                   }
@@ -216,7 +224,9 @@ var Layout = React.createClass({
                     <div>
                       <Title title={this.learnTitle("col(not-hidden)")} />
                       <div className={contentClass}>
-                        <LearnNotHiddenContent />
+                        <div className="xl-pt8">
+                          <LearnNotHiddenContent type={this.props.type} />
+                        </div>
                       </div>
                     </div>
                   }
@@ -224,7 +234,9 @@ var Layout = React.createClass({
                     <div>
                       <Title title={this.learnTitle("wrap(gutter,@width)")} />
                       <div className={contentClass}>
-                        <LearnGutterContent />
+                        <div className="xl-pt8">
+                          <LearnGutterContent type={this.props.type} />
+                        </div>
                       </div>
                     </div>
                   }
@@ -232,7 +244,9 @@ var Layout = React.createClass({
                     <div>
                       <Title title={this.learnTitle("wrap(outside,@width)")} />
                       <div className={contentClass}>
-                        <LearnOutsideContent />
+                        <div className="xl-pt8">
+                          <LearnOutsideContent type={this.props.type} />
+                        </div>
                       </div>
                     </div>
                   }
@@ -240,7 +254,9 @@ var Layout = React.createClass({
                     <div>
                       <Title title={this.learnTitle("wrap(@col)")} />
                       <div className={contentClass}>
-                        <LearnWrapColContent />
+                        <div className="xl-pt8">
+                          <LearnWrapColContent type={this.props.type} />
+                        </div>
                       </div>
                     </div>
                   }
@@ -248,7 +264,9 @@ var Layout = React.createClass({
                     <div>
                       <Title title={this.learnTitle("wrap(auto)")} />
                       <div className={contentClass}>
-                        <LearnAutoContent />
+                        <div className="xl-pt8">
+                          <LearnAutoContent type={this.props.type} />
+                        </div>
                       </div>
                     </div>
                   }
@@ -256,7 +274,9 @@ var Layout = React.createClass({
                     <div>
                       <Title title={this.learnTitle("wrap(table)")} />
                       <div className={contentClass}>
-                        <LearnTableContent />
+                        <div className="xl-pt8">
+                          <LearnTableContent type={this.props.type} />
+                        </div>
                       </div>
                     </div>
                   }
@@ -264,7 +284,9 @@ var Layout = React.createClass({
                     <div>
                       <Title title={this.learnTitle("col(@width)")} />
                       <div className={contentClass}>
-                        <LearnWidthContent />
+                        <div className="xl-pt8">
+                          <LearnWidthContent type={this.props.type} />
+                        </div>
                       </div>
                     </div>
                   }
@@ -272,7 +294,9 @@ var Layout = React.createClass({
                     <div>
                       <Title title={this.learnTitle("wrap(flexbox)")} />
                       <div className={contentClass}>
-                        <LearnFlexboxContent />
+                        <div className="xl-pt8">
+                          <LearnFlexboxContent type={this.props.type} />
+                        </div>
                       </div>
                     </div>
                   }
@@ -280,7 +304,9 @@ var Layout = React.createClass({
                     <div>
                       <Title title={this.learnTitle("wrap(normal)")} />
                       <div className={contentClass}>
-                        <LearnNormalContent />
+                        <div className="xl-pt8">
+                          <LearnNormalContent type={this.props.type} />
+                        </div>
                       </div>
                     </div>
                   }
@@ -288,7 +314,9 @@ var Layout = React.createClass({
                     <div>
                       <Title title={this.learnTitle("wrap(left)")} />
                       <div className={contentClass}>
-                        <LearnLeftContent />
+                        <div className="xl-pt8">
+                          <LearnLeftContent type={this.props.type} />
+                        </div>
                       </div>
                     </div>
                   }
@@ -296,7 +324,9 @@ var Layout = React.createClass({
                     <div>
                       <Title title={this.learnTitle("wrap(center)")} />
                       <div className={contentClass}>
-                        <LearnCenterContent />
+                        <div className="xl-pt8">
+                          <LearnCenterContent type={this.props.type} />
+                        </div>
                       </div>
                     </div>
                   }
@@ -304,7 +334,9 @@ var Layout = React.createClass({
                     <div>
                       <Title title={this.learnTitle("wrap(right)")} />
                       <div className={contentClass}>
-                        <LearnRightContent />
+                        <div className="xl-pt8">
+                          <LearnRightContent type={this.props.type} />
+                        </div>
                       </div>
                     </div>
                   }
@@ -312,7 +344,9 @@ var Layout = React.createClass({
                     <div>
                       <Title title={this.learnTitle("wrap(top)")} />
                       <div className={contentClass}>
-                        <LearnTopContent />
+                        <div className="xl-pt8">
+                          <LearnTopContent type={this.props.type} />
+                        </div>
                       </div>
                     </div>
                   }
@@ -320,7 +354,9 @@ var Layout = React.createClass({
                     <div>
                       <Title title={this.learnTitle("wrap(middle)")} />
                       <div className={contentClass}>
-                        <LearnMiddleContent />
+                        <div className="xl-pt8">
+                          <LearnMiddleContent type={this.props.type} />
+                        </div>
                       </div>
                     </div>
                   }
@@ -328,7 +364,9 @@ var Layout = React.createClass({
                     <div>
                       <Title title={this.learnTitle("wrap(bottom)")} />
                       <div className={contentClass}>
-                        <LearnBottomContent />
+                        <div className="xl-pt8">
+                          <LearnBottomContent type={this.props.type} />
+                        </div>
                       </div>
                     </div>
                   }
@@ -336,7 +374,9 @@ var Layout = React.createClass({
                     <div>
                       <Title title={this.learnTitle("wrap(between)")} />
                       <div className={contentClass}>
-                        <LearnBetweenContent />
+                        <div className="xl-pt8">
+                          <LearnBetweenContent type={this.props.type} />
+                        </div>
                       </div>
                     </div>
                   }
@@ -344,7 +384,9 @@ var Layout = React.createClass({
                     <div>
                       <Title title={this.learnTitle("wrap(around)")} />
                       <div className={contentClass}>
-                        <LearnAroundContent />
+                        <div className="xl-pt8">
+                          <LearnAroundContent type={this.props.type} />
+                        </div>
                       </div>
                     </div>
                   }
@@ -352,7 +394,9 @@ var Layout = React.createClass({
                     <div>
                       <Title title={this.learnTitle("wrap(baseline)")} />
                       <div className={contentClass}>
-                        <LearnBaselineContent />
+                        <div className="xl-pt8">
+                          <LearnBaselineContent type={this.props.type} />
+                        </div>
                       </div>
                     </div>
                   }
@@ -360,7 +404,9 @@ var Layout = React.createClass({
                     <div>
                       <Title title={this.learnTitle("col(first)")} />
                       <div className={contentClass}>
-                        <LearnFirstContent />
+                        <div className="xl-pt8">
+                          <LearnFirstContent type={this.props.type} />
+                        </div>
                       </div>
                     </div>
                   }
@@ -368,7 +414,9 @@ var Layout = React.createClass({
                     <div>
                       <Title title={this.learnTitle("col(not-first)")} />
                       <div className={contentClass}>
-                        <LearnNotFirstContent />
+                        <div className="xl-pt8">
+                          <LearnNotFirstContent type={this.props.type} />
+                        </div>
                       </div>
                     </div>
                   }
@@ -376,7 +424,9 @@ var Layout = React.createClass({
                     <div>
                       <Title title={this.learnTitle("col(last)")} />
                       <div className={contentClass}>
-                        <LearnLastContent />
+                        <div className="xl-pt8">
+                          <LearnLastContent type={this.props.type} />
+                        </div>
                       </div>
                     </div>
                   }
@@ -384,7 +434,9 @@ var Layout = React.createClass({
                     <div>
                       <Title title={this.learnTitle("col(not-last)")} />
                       <div className={contentClass}>
-                        <LearnNotLastContent />
+                        <div className="xl-pt8">
+                          <LearnNotLastContent type={this.props.type} />
+                        </div>
                       </div>
                     </div>
                   }
@@ -392,7 +444,9 @@ var Layout = React.createClass({
                     <div>
                       <Title title={this.learnTitle("wrap(reverse)")} />
                       <div className={contentClass}>
-                        <LearnReverseContent />
+                        <div className="xl-pt8">
+                          <LearnReverseContent type={this.props.type} />
+                        </div>
                       </div>
                     </div>
                   }
@@ -400,7 +454,9 @@ var Layout = React.createClass({
                     <div>
                       <Title title={this.learnTitle("wrap(not-reverse)")} />
                       <div className={contentClass}>
-                        <LearnNotReverseContent />
+                        <div className="xl-pt8">
+                          <LearnNotReverseContent type={this.props.type} />
+                        </div>
                       </div>
                     </div>
                   }
@@ -408,7 +464,9 @@ var Layout = React.createClass({
                     <div>
                       <Title title={this.learnTitle("wrap(masonry,@col)")} />
                       <div className={contentClass}>
-                        <LearnMasonryContent />
+                        <div className="xl-pt8">
+                          <LearnMasonryContent type={this.props.type} />
+                        </div>
                       </div>
                     </div>
                   }
@@ -416,7 +474,9 @@ var Layout = React.createClass({
                     <div>
                       <Title title={this.learnTitle("breakpoint")} />
                       <div className={contentClass}>
-                        <LearnBreakpointContent />
+                        <div className="xl-pt8">
+                          <LearnBreakpointContent type={this.props.type} />
+                        </div>
                       </div>
                     </div>
                   }

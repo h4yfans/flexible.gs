@@ -2,11 +2,13 @@
 
 import React from 'react';
 
+import Code from '../partial/Code.react'
+
 var LearnMasonryContent = React.createClass({
   render: function() {
     return (
       <div>
-
+        <Code type={this.props.type} />
         <div className="preview preview--last-child">
           <div className="wrap xl-gutter-24 xl-top xl-masonry-3" style={{background: '#FBD0DF'}}>
             <div className="col xl-1-1"><div className="preview__item--col" style={{marginBottom: '24px'}}>01</div></div>

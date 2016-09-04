@@ -231,11 +231,14 @@ var Sidebar = React.createClass({
                   className={path == "learn/table" ? linkClassActive : linkClass}>
                   wrap(table)
                 </Link>
-                <Link
+                {/*<Link
                   to={linkWidth}
                   className={path == "learn/width" ? linkClassActive : linkClass}>
                   col(@width)
-                </Link>
+                </Link>*/}
+                <div className="xl-db xl-py8 xl-px16 xl-ba-white xl-co-gray-500 xl-bwb1 xl-bo-gray-200 xl-cn xl-tdlt">
+                  col(@width)
+                </div>
                 <Link
                   to={linkFlexbox}
                   className={path == "learn/flexbox" ? linkClassActive : linkClass}>
@@ -335,6 +338,7 @@ var Sidebar = React.createClass({
             </div>
           </div>
         }
+        <div className="xl-ffscp xl-fs14 xl-tac xl-co-gray-500 xl-mt16">v5.5.3</div>
       </div>
     );
   }
