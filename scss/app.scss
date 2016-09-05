@@ -11,12 +11,6 @@
 @import "../bower_components/flexiblegs-scss-plus/scss/helper/flexiblegs-scss-plus";
 
 // --------------------
-// Pixel Perfect CSS
-// --------------------
-@import "helper/pixelperfectcss";
-@import "../bower_components/pixelperfectcss-scss/scss/helper/pixelperfectcss-scss";
-
-// --------------------
 // Generated
 // --------------------
 @import "generated/icon";
@@ -48,3 +42,9 @@
 // --------------------
 @import "component/icon";
 @import "component/code";
+
+// --------------------
+// Pixel Perfect CSS
+// --------------------
+@import "helper/pixelperfectcss";
+@import "../bower_components/pixelperfectcss-scss/scss/helper/pixelperfectcss-scss";
