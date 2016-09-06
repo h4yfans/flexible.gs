@@ -28,7 +28,7 @@ var Header = React.createClass({
                 <div className="col">
                   <Link
                     to="/"
-                    className="icon-flexiblegs xl-vam xl-dib xl-p8 xl-co-white ho-co-gray-500"/>
+                    className="icon-flexiblegs xl-vam xl-dib xl-p8 xl-co-white"/>
                 </div>
                 <div className="col md-my8">
                   <Link
@@ -68,26 +68,26 @@ var Header = React.createClass({
               <a
                 href="https://github.com/flexiblegs/flexiblegs-scss-plus/stargazers"
                 target="_blank"
-                className="icon-github-alt icon-sm xl-vam xl-dib xl-co-white ho-co-gray-500 xl-p8 xl-mr8"/>
+                className="icon-github-alt icon-sm xl-vam xl-dib xl-co-white xl-p8 xl-mr8"/>
               <a
                 href="https://twitter.com/flexiblegs"
                 target="_blank"
-                className="icon-twitter icon-sm xl-vam xl-dib xl-co-white ho-co-gray-500 xl-p8 xl-mr8"/>
+                className="icon-twitter icon-sm xl-vam xl-dib xl-co-white xl-p8 xl-mr8"/>
               <a
                 href="https://goo.gl/6n5oTO"
                 target="_blank"
-                className="icon-youtube-play icon-sm xl-vam xl-dib xl-co-white ho-co-gray-500 xl-p8 xl-mr16"/>
+                className="icon-youtube-play icon-sm xl-vam xl-dib xl-co-white xl-p8 xl-mr16"/>
               {this.props.lang == "en" &&
                 <div
                   onClick={this.switchLanguage.bind(this,'tr')}
-                  className="xl-cp xl-ffscp xl-vam xl-px8 xl-dib xl-fs14 xl-lh24 xl-fw400 xl-ba-white xl-br4 xl-co-black-500 ho-ba-gray-500">
+                  className="xl-cp xl-ffscp xl-vam xl-px8 xl-dib xl-fs14 xl-lh24 xl-fw400 xl-ba-white xl-br4 xl-co-black-500">
                   Türkçe
                 </div>
               }
               {this.props.lang == "tr" &&
                 <div
                   onClick={this.switchLanguage.bind(this,'en')}
-                  className="xl-cp xl-ffscp xl-vam xl-px8 xl-dib xl-fs14 xl-lh24 xl-fw400 xl-ba-white xl-br4 xl-co-black-500 ho-ba-gray-500">
+                  className="xl-cp xl-ffscp xl-vam xl-px8 xl-dib xl-fs14 xl-lh24 xl-fw400 xl-ba-white xl-br4 xl-co-black-500">
                   English
                 </div>
               }
