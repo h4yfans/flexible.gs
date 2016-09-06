@@ -53,7 +53,7 @@
     "compatibility": {
       "line001": "If you use <span class='xl-fw400'>Responsive Design</span> because of <span class='xl-fw400'>Media Queries</span> we support <span class='xl-fw400'>Internet Explorer 9 and +</span> versions.",
       "line002": "If you use <span class='xl-fw400'>Flexbox</span> we support <span class='xl-fw400'>Internet Explorer 10 and +</span> versions.",
-      "line003": "Other than the two exceptions above we supprt all the major desktop and mobile browsers."
+      "line003": "Other than the two exceptions above we support all the major desktop and mobile browsers."
     },
     "motivation": {
       "line001": "The links that makes us super happy and motivated."
